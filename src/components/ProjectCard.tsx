@@ -17,8 +17,8 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <>
-      <div className="flex flex-col">
-        <h1>{projectName}</h1>
+      <div className="flex flex-col min-w-[30%] max-w-[45%] border">
+        <h1 className="text-3xl">{projectName}</h1>
         <img src={picture1} />
         <img src={picture2} />
         <a href={deploymentLink}>Deployment Link</a>

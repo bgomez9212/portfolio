@@ -49,7 +49,7 @@ export default function Navbar() {
         </div>
       </div>
       <div
-        className={`w-[90%] flex justify-center shadow-[rgba(0,0,10,${dynamicHeight.shadow})_0px_10px_0px_0px] pb-3`}
+        className={`w-[90%] flex justify-center shadow-[rgba(0,0,10,${dynamicHeight.shadow})_0px_5px_0px_0px] pb-3`}
       >
         <div className="w-1/2 flex justify-between">
           <a>Personal Projects</a>

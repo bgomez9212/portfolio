@@ -2,7 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function PersonalProjects() {
   return (
-    <div>
+    <div className="flex justify-evenly flex-wrap">
       <ProjectCard
         projectName="MealMachine"
         picture1="#"
