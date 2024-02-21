@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import AboutMe from "./sections/AboutMe";
+import HackReactor from "./sections/HackReactor";
 import PersonalProjects from "./sections/PersonalProjects";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <AboutMe />
       <PersonalProjects />
+      <HackReactor />
     </div>
   );
 }

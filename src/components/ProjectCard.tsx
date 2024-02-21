@@ -20,15 +20,21 @@ export default function ProjectCard({
         <p className="mb-3">{description}</p>
         <div className="flex justify-end">
           <div className="flex w-1/3 justify-between">
-            <a className="hover:underline" href={deploymentLink}>
-              Deployment Link
-            </a>
-            <a className="hover:underline" href={githubLink}>
-              GitHub Repo
-            </a>
-            <a className="hover:underline" href={figmaLink}>
-              Figma Design
-            </a>
+            {deploymentLink && (
+              <a className="hover:underline" href={deploymentLink}>
+                Deployment Link
+              </a>
+            )}
+            {githubLink && (
+              <a className="hover:underline" href={githubLink}>
+                GitHub Repo
+              </a>
+            )}
+            {figmaLink && (
+              <a className="hover:underline" href={figmaLink}>
+                Figma Design
+              </a>
+            )}
           </div>
         </div>
       </div>
