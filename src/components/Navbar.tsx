@@ -12,7 +12,7 @@ export default function Navbar() {
       const scrollPosition = window.scrollY;
       const newPicHeight = Math.max(200 - scrollPosition * 0.2, 75);
       const newPadding = Math.max(20 - scrollPosition * 0.02, 6);
-      const newShadow = Math.min(scrollPosition * 0.25, 10);
+      const newShadow = Math.min(scrollPosition * 0.005, 0.2);
       console.log(newShadow);
       setDynamicHeight({
         pic: newPicHeight,
@@ -49,7 +49,7 @@ export default function Navbar() {
         </div>
       </div>
       <div
-        className={`w-[90%] flex justify-center shadow-[rgba(0,0,10,0.2)_0px_${dynamicHeight.shadow}px_0px_0px] pb-3`}
+        className={`w-[90%] flex justify-center shadow-[rgba(0,0,10,${dynamicHeight.shadow})_0px_10px_0px_0px] pb-3`}
       >
         <div className="w-1/2 flex justify-between">
           <a>Personal Projects</a>
