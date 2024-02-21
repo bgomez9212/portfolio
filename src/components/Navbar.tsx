@@ -25,7 +25,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="flex-col flex items-center fixed top-0 left-0 right-0 bg-white">
+    <div
+      className={`flex-col flex items-center fixed top-0 left-0 right-0 bg-white shadow-[rgba(0,0,10,${dynamicHeight.shadow})_0px_5px_0px_0px]`}
+    >
       <div className="w-full flex justify-center mb-5">
         <div
           className="flex items-center justify-center border-b-2 w-[90%]"
@@ -48,14 +50,20 @@ export default function Navbar() {
           <h1 className="text-2xl">Software Engineer</h1>
         </div>
       </div>
-      <div
-        className={`w-[90%] flex justify-center shadow-[rgba(0,0,10,${dynamicHeight.shadow})_0px_5px_0px_0px] pb-3`}
-      >
+      <div className={`w-[90%] flex justify-center pb-3`}>
         <div className="w-1/2 flex justify-between">
-          <a>Personal Projects</a>
-          <a>HackReactor</a>
-          <a>Scrimba</a>
-          <a>Contact</a>
+          <a href="#" className="hover:underline">
+            Personal Projects
+          </a>
+          <a href="#" className="hover:underline">
+            HackReactor
+          </a>
+          <a href="#" className="hover:underline">
+            Scrimba
+          </a>
+          <a href="#" className="hover:underline">
+            Contact
+          </a>
         </div>
       </div>
     </div>
