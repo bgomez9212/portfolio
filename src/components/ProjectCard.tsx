@@ -1,7 +1,6 @@
 type ProjectCardProps = {
   projectName: string;
-  picture1: string;
-  picture2: string;
+  description: string;
   deploymentLink: string;
   githubLink: string;
   figmaLink: string;
@@ -9,21 +8,29 @@ type ProjectCardProps = {
 
 export default function ProjectCard({
   projectName,
-  picture1,
-  picture2,
+  description,
   deploymentLink,
   githubLink,
   figmaLink,
 }: ProjectCardProps) {
   return (
     <>
-      <div className="flex flex-col min-w-[30%] max-w-[45%] border">
-        <h1 className="text-3xl">{projectName}</h1>
-        <img src={picture1} />
-        <img src={picture2} />
-        <a href={deploymentLink}>Deployment Link</a>
-        <a href={githubLink}>GitHub Repo</a>
-        <a href={figmaLink}>Figma Design</a>
+      <div className="flex flex-col border w-[90%] mb-5 p-5">
+        <h1 className="text-3xl mb-3">{projectName}</h1>
+        <p className="mb-3">{description}</p>
+        <div className="flex justify-end">
+          <div className="flex w-1/3 justify-between">
+            <a className="hover:underline" href={deploymentLink}>
+              Deployment Link
+            </a>
+            <a className="hover:underline" href={githubLink}>
+              GitHub Repo
+            </a>
+            <a className="hover:underline" href={figmaLink}>
+              Figma Design
+            </a>
+          </div>
+        </div>
       </div>
     </>
   );
