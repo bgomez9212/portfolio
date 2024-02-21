@@ -1,10 +1,11 @@
 import Navbar from "./components/Navbar";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <div className="h-[2000px]" />
+      <AboutMe />
     </div>
   );
 }

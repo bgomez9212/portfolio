@@ -35,11 +35,11 @@ export default function Navbar() {
           >
             <img src="/self.jpg" className="w-full object-cover rounded-full" />
           </div>
-          <h1 className="text-2xl">Software Developer</h1>
+          <h1 className="text-2xl">Software Engineer</h1>
         </div>
       </div>
       <div className="w-1/2 flex justify-between">
-        <a>Personal</a>
+        <a>Personal Projects</a>
         <a>HackReactor</a>
         <a>Scrimba</a>
         <a>Contact</a>
