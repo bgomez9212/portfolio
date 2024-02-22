@@ -19,19 +19,28 @@ export default function ProjectCard({
         <h1 className="text-3xl mb-3">{projectName}</h1>
         <p className="mb-3">{description}</p>
         <div className="flex justify-end">
-          <div className="flex w-1/3 justify-between">
+          <div className="flex justify-between">
             {deploymentLink && (
-              <a className="hover:underline" href={deploymentLink}>
+              <a
+                className="hover:underline hover:font-bold"
+                href={deploymentLink}
+              >
                 Deployment Link
               </a>
             )}
             {githubLink && (
-              <a className="hover:underline" href={githubLink}>
+              <a
+                className="hover:underline hover:font-bold ml-5"
+                href={githubLink}
+              >
                 GitHub Repo
               </a>
             )}
             {figmaLink && (
-              <a className="hover:underline" href={figmaLink}>
+              <a
+                className="hover:underline hover:font-bold ml-5"
+                href={figmaLink}
+              >
                 Figma Design
               </a>
             )}

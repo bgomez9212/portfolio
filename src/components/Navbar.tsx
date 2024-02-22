@@ -4,7 +4,7 @@ export default function Navbar() {
   const [dynamicHeight, setDynamicHeight] = useState({
     pic: 200,
     pad: 20,
-    shadow: 0,
+    shadow: "",
   });
 
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function Navbar() {
       const scrollPosition = window.scrollY;
       const newPicHeight = Math.max(200 - scrollPosition * 0.2, 75);
       const newPadding = Math.max(20 - scrollPosition * 0.02, 6);
-      const newShadow = Math.min(scrollPosition * 0.005, 0.2);
+      const newShadow = scrollPosition > 30 ? "shadow-xl" : "";
       console.log(newShadow);
       setDynamicHeight({
         pic: newPicHeight,
@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex-col flex items-center fixed top-0 left-0 right-0 bg-white shadow-[rgba(0,0,10,${dynamicHeight.shadow})_0px_5px_0px_0px]`}
+      className={`flex-col flex items-center fixed top-0 left-0 right-0 bg-white ${dynamicHeight.shadow}`}
     >
       <div className="w-full flex justify-center mb-5">
         <div
@@ -52,16 +52,19 @@ export default function Navbar() {
       </div>
       <div className={`w-[90%] flex justify-center pb-3`}>
         <div className="w-1/2 flex justify-between">
-          <a href="#personal-projects" className="hover:underline">
+          <a
+            href="#personal-projects"
+            className="hover:underline hover:font-bold"
+          >
             Personal Projects
           </a>
-          <a href="#hack-reactor" className="hover:underline">
+          <a href="#hack-reactor" className="hover:underline hover:font-bold">
             HackReactor
           </a>
-          <a href="#Scrimba" className="hover:underline">
+          <a href="#Scrimba" className="hover:underline hover:font-bold">
             Scrimba
           </a>
-          <a href="#" className="hover:underline">
+          <a href="#" className="hover:underline hover:font-bold">
             Contact
           </a>
         </div>
