@@ -5,7 +5,7 @@ import PersonalProjects from "./sections/PersonalProjects";
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Navbar />
       <AboutMe />
       <PersonalProjects />

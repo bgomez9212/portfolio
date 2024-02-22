@@ -52,13 +52,13 @@ export default function Navbar() {
       </div>
       <div className={`w-[90%] flex justify-center pb-3`}>
         <div className="w-1/2 flex justify-between">
-          <a href="#" className="hover:underline">
+          <a href="#personal-projects" className="hover:underline">
             Personal Projects
           </a>
-          <a href="#" className="hover:underline">
+          <a href="#hack-reactor" className="hover:underline">
             HackReactor
           </a>
-          <a href="#" className="hover:underline">
+          <a href="#Scrimba" className="hover:underline">
             Scrimba
           </a>
           <a href="#" className="hover:underline">

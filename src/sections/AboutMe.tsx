@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div className="flex justify-center pt-80 mb-32">
+    <div className="flex justify-center pt-96">
       <div className="w-1/2 text-center text-md">
         Hello and welcome to my portfolio site. You are welcome to either scroll
         down through the sections, or click through the navigation to jump you
