@@ -14,7 +14,7 @@ export default function PersonalProjects() {
         />
         <ProjectCard
           projectName="Portfolio"
-          description="This is the site you are currently visiting! After a bit of a break due to a medical emergency, I wanted to come back and get my legs under me again, and while applying for jobs I noticed quite a few of them had inputs for portfolio sites, so to get some more practice and do something that wouldn't take weeks to complete I started to work on this. I think having a place other than github to keep track of my projects is helpful and any additional coding I can do with a clear goal in mind is always great for me. The design was done by me, starting with using Figma to create a blueprint. This site is created with Vite+Typescript and deployed on Railway"
+          description="This is the site you are currently visiting! While applying for jobs I noticed quite a few of them had inputs for portfolio sites, so to get some more practice and do something that wouldn't take weeks to complete, I started to work on this. I think having a place other than github to keep track of my projects is helpful and any additional coding I can do with a clear goal in mind is always great for me. The design was done by me, starting with using Figma to create a blueprint. This site is created with Vite+Typescript and deployed on Railway"
           githubLink="https://github.com/bgomez9212/portfolio"
           deploymentLink=""
           figmaLink="https://www.figma.com/file/YJOqi4hT8PbIODMxFTSfYN/Untitled?type=design&mode=design&t=wA7fBIwr2RwqhgCd-0"

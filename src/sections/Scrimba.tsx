@@ -37,7 +37,7 @@ export default function Scrimba() {
           projectName="Password Generator"
           description=""
           githubLink="bgomez9212/scrimbaPasswordGen"
-          deploymentLink="Making Websites Interactive"
+          deploymentLink=""
           figmaLink="https://www.figma.com/file/YRO9Iw5IYaOorjnRyNz4bV/Random-Password-Generator?type=design&node-id=0-1&mode=design&t=yjxhrZFUo7VTWGfk-0"
         />
         <ProjectCard

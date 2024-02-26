@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       spacing: {
-        navbar: "9.375rem",
+        navbar: "10rem",
       },
     },
   },
