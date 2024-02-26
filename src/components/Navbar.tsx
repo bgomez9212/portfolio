@@ -12,8 +12,7 @@ export default function Navbar() {
       const scrollPosition = window.scrollY;
       const newPicHeight = Math.max(200 - scrollPosition * 0.2, 75);
       const newPadding = Math.max(20 - scrollPosition * 0.02, 6);
-      const newShadow = scrollPosition > 30 ? "shadow-xl" : "";
-      console.log(newShadow);
+      const newShadow = scrollPosition > 30 ? "shadow-lg" : "";
       setDynamicHeight({
         pic: newPicHeight,
         pad: newPadding,
@@ -61,10 +60,10 @@ export default function Navbar() {
           <a href="#hack-reactor" className="hover:underline hover:font-bold">
             HackReactor
           </a>
-          <a href="#Scrimba" className="hover:underline hover:font-bold">
+          <a href="#scrimba" className="hover:underline hover:font-bold">
             Scrimba
           </a>
-          <a href="#" className="hover:underline hover:font-bold">
+          <a href="#contact" className="hover:underline hover:font-bold">
             Contact
           </a>
         </div>

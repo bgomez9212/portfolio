@@ -1,7 +1,9 @@
 import Navbar from "./components/Navbar";
 import AboutMe from "./sections/AboutMe";
+import Contact from "./sections/Contact";
 import HackReactor from "./sections/HackReactor";
 import PersonalProjects from "./sections/PersonalProjects";
+import Scrimba from "./sections/Scrimba";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <AboutMe />
       <PersonalProjects />
       <HackReactor />
+      <Scrimba />
+      <Contact />
     </div>
   );
 }

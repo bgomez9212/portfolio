@@ -16,15 +16,15 @@ export default function PersonalProjects() {
           projectName="Portfolio"
           description="This is the site you are currently visiting! After a bit of a break due to a medical emergency, I wanted to come back and get my legs under me again, and while applying for jobs I noticed quite a few of them had inputs for portfolio sites, so to get some more practice and do something that wouldn't take weeks to complete I started to work on this. I think having a place other than github to keep track of my projects is helpful and any additional coding I can do with a clear goal in mind is always great for me. The design was done by me, starting with using Figma to create a blueprint. This site is created with Vite+Typescript and deployed on Railway"
           githubLink="https://github.com/bgomez9212/portfolio"
-          deploymentLink="mealmachine.up.railway.app"
+          deploymentLink=""
           figmaLink="https://www.figma.com/file/YJOqi4hT8PbIODMxFTSfYN/Untitled?type=design&mode=design&t=wA7fBIwr2RwqhgCd-0"
         />
         <ProjectCard
           projectName="Digital Notebook (WIP)"
           description="Digital Notebook is an app I am currently working on to learn React Native. The pitch is: in the silly world of professional wrestling, us fans like to rate matches on a five-star scale, similar to how well-adjusted people might judge a movie. It will also act as a database, providing the average rating from multiple users for individual matches. Currently there is not an app that provides this utility to wrestling fans. Using Python I was able to build a web scraper that scrapes the details that I need for events and populate a relational database(PostgreSQL). Using this data I am able to organize matches by the event they occured on, as well as the participants involved. Then using React Native I'm working to be able to present this data to users."
           githubLink="https://github.com/bgomez9212/portfolio"
-          deploymentLink="mealmachine.up.railway.app"
-          figmaLink="https://www.figma.com/file/YJOqi4hT8PbIODMxFTSfYN/Untitled?type=design&mode=design&t=wA7fBIwr2RwqhgCd-0"
+          deploymentLink=""
+          figmaLink="https://www.figma.com/file/fWXdSi8CaDkkY0UcANZ7hd/TheNotebook?type=design&mode=design&t=VXMgyeN7G03vGz0A-0"
         />
       </div>
     </div>
