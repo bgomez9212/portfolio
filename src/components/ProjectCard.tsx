@@ -22,7 +22,7 @@ export default function ProjectCard({
           <div className="flex justify-between">
             {deploymentLink && (
               <a
-                className="hover:underline hover:font-bold"
+                className="hover:underline underline-offset-8"
                 href={deploymentLink}
               >
                 Deployment Link
@@ -30,7 +30,7 @@ export default function ProjectCard({
             )}
             {githubLink && (
               <a
-                className="hover:underline hover:font-bold ml-5"
+                className="hover:underline underline-offset-8 ml-5"
                 href={githubLink}
               >
                 GitHub Repo
@@ -38,7 +38,7 @@ export default function ProjectCard({
             )}
             {figmaLink && (
               <a
-                className="hover:underline hover:font-bold ml-5"
+                className="hover:underline underline-offset-8 ml-5"
                 href={figmaLink}
               >
                 Figma Design
