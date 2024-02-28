@@ -5,6 +5,7 @@ export default {
     extend: {
       spacing: {
         navbar: "10rem",
+        mobileNav: "12rem",
       },
     },
   },

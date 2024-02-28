@@ -4,7 +4,10 @@ import EmailIcon from "@mui/icons-material/Email";
 
 export default function Contact() {
   return (
-    <div className="py-navbar flex flex-col w-[90%]" id="contact">
+    <div
+      className="py-mobileNav sm:py-navbar flex flex-col w-[90%]"
+      id="contact"
+    >
       <h1 className="text-3xl mb-5 underline">Contact</h1>
       <div className="flex justify-evenly items-center flex-wrap h-32">
         <a href="mailto: bgomez9212@gmail.com">

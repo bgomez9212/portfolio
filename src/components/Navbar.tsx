@@ -42,31 +42,40 @@ export default function Navbar() {
               height: `${dynamicHeight.pic}px`,
               width: `${dynamicHeight.pic}px`,
             }}
-            className="flex justify-center mx-20"
+            className="flex justify-center sm:mx-20"
           >
-            <img src="/self.jpg" className="w-full object-cover rounded-full" />
+            <img
+              src="/self.jpg"
+              className="w-full object-cover rounded-full border"
+            />
           </div>
-          <h1 className="text-2xl">Software Engineer</h1>
+          <h1 className="text-2xl text-right">Software Engineer</h1>
         </div>
       </div>
-      <div className={`w-[90%] flex justify-center pb-3`}>
-        <div className="w-1/2 flex justify-between">
+      <div className={`w-[90%] flex sm:justify-center pb-3`}>
+        <div className="sm:w-1/2 flex justify-between flex-wrap sm:flex-row">
           <a
             href="#personal-projects"
-            className="hover:underline underline-offset-8"
+            className="hover:underline underline-offset-8 w-1/2 sm:w-auto"
           >
             Personal Projects
           </a>
           <a
             href="#hack-reactor"
-            className="hover:underline underline-offset-8"
+            className="hover:underline underline-offset-8 w-1/2 text-right sm:w-auto"
           >
             HackReactor
           </a>
-          <a href="#scrimba" className="hover:underline underline-offset-8">
+          <a
+            href="#scrimba"
+            className="hover:underline underline-offset-8 w-1/2 sm:w-auto"
+          >
             Scrimba
           </a>
-          <a href="#contact" className="hover:underline underline-offset-8">
+          <a
+            href="#contact"
+            className="hover:underline underline-offset-8 w-1/2 text-right sm:w-auto"
+          >
             Contact
           </a>
         </div>

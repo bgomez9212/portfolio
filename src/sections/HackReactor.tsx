@@ -2,7 +2,10 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function HackReactor() {
   return (
-    <div className="pt-navbar flex flex-col w-[90%]" id="hack-reactor">
+    <div
+      className="py-mobileNav sm:py-navbar flex flex-col w-[90%]"
+      id="hack-reactor"
+    >
       <h1 className="text-3xl mb-5 underline">HackReactor</h1>
       <div className="flex justify-evenly flex-wrap">
         <ProjectCard

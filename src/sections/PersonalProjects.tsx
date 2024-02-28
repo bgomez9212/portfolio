@@ -2,7 +2,10 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function PersonalProjects() {
   return (
-    <div className="pt-navbar flex flex-col w-[90%]" id="personal-projects">
+    <div
+      className="py-mobileNav sm:py-navbar flex flex-col w-[90%]"
+      id="personal-projects"
+    >
       <h1 className="text-3xl mb-5 underline">Personal Projects</h1>
       <div className="flex justify-evenly flex-wrap">
         <ProjectCard
