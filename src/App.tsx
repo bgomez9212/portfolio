@@ -7,7 +7,7 @@ import Scrimba from "./sections/Scrimba";
 
 function App() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center dark:bg-black dark:text-white">
       <Navbar />
       <AboutMe />
       <PersonalProjects />

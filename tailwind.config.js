@@ -4,9 +4,14 @@ export default {
   theme: {
     extend: {
       spacing: {
-        navbar: "10rem",
+        navbar: "11rem",
         mobileNav: "12rem",
       },
+    },
+    colors: {
+      black: "#121212",
+      white: "#FFFFFF",
+      gray: "#ECECEC",
     },
   },
   plugins: [],

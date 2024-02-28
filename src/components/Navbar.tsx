@@ -25,11 +25,11 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex-col flex items-center fixed top-0 left-0 right-0 bg-white ${dynamicHeight.shadow}`}
+      className={`flex-col flex items-center fixed top-0 left-0 right-0 bg-white dark:bg-black dark:text-white dark:shadow-white ${dynamicHeight.shadow}`}
     >
       <div className="w-full flex justify-center mb-5">
         <div
-          className="flex items-center justify-center border-b-2 w-[90%]"
+          className="flex items-center justify-center border-b-2 border-b-gray w-[90%]"
           style={{
             paddingTop: `${dynamicHeight.pad}px`,
             paddingBottom: `${dynamicHeight.pad}px`,
@@ -44,10 +44,7 @@ export default function Navbar() {
             }}
             className="flex justify-center sm:mx-20"
           >
-            <img
-              src="/self.jpg"
-              className="w-full object-cover rounded-full border"
-            />
+            <img src="/self.jpg" className="w-full object-cover rounded-full" />
           </div>
           <h1 className="text-2xl text-right">Software Engineer</h1>
         </div>

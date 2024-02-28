@@ -15,7 +15,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <>
-      <div className="flex flex-col border mb-5 p-5 w-full">
+      <div className="flex flex-col border border-gray mb-5 p-5 w-full">
         <h1 className="text-3xl mb-3">{projectName}</h1>
         <p className="mb-3">{description}</p>
         <div className="flex justify-end">
