@@ -11,14 +11,14 @@ export default function Scrimba() {
         <ProjectCard
           projectName="Quizzical"
           description="The solo project of Scrimba's React section, using React and the Open Trivia Database (https://opentdb.com/), replicate a Figma design of a quiz application. I added a bit more than the project entailed, adding options for the user to decide the category of questions as well as the number of questions."
-          githubLink="https://github/bgomez9212/scrimbaQuizzical"
+          githubLink="https://github.com/bgomez9212/scrimbaQuizzical"
           deploymentLink="https://scrimbaquizzical-production.up.railway.app/"
           figmaLink="https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?type=design&node-id=0-1&mode=design&t=ayFsM9aWk7R0vfWi-0"
         />
         <ProjectCard
           projectName="Movie Watchlist"
           description="The second solo project of Scrimba's Working with API's section. Using the Open Movie Database API (https://www.omdbapi.com/) along with HTML, CSS, and Javascript, create an application that allows users to create a movie watchlist. The design is provided in the form of a Figma design. This was the first introduction to Promises within Javascript."
-          githubLink="https://github/bgomez9212/scrimbaMovieWatchlist"
+          githubLink="https://github.com/bgomez9212/scrimbaMovieWatchlist"
           deploymentLink="https://scrimbamoviewatchlist-production.up.railway.app/"
           figmaLink="https://www.figma.com/file/jhFRdFIdHpRxsDznNXtpXw/Movie-Watchlist?type=design&node-id=2-17&mode=design&t=SjkCQCFJTkwIKYnh-0"
         />
