@@ -35,22 +35,22 @@ export default function Navbar() {
             paddingBottom: `${dynamicHeight.pad}px`,
           }}
         >
-          <h1 className="text-2xl">Brandon Gomez</h1>
+          <h1 className="text-2xl mr-5">Brandon Gomez</h1>
           <div
             id="pic-contain"
             style={{
               height: `${dynamicHeight.pic}px`,
               width: `${dynamicHeight.pic}px`,
             }}
-            className="flex justify-center sm:mx-20"
+            className="flex justify-center"
           >
             <img src="/self.jpg" className="w-full object-cover rounded-full" />
           </div>
-          <h1 className="text-2xl text-right">Software Engineer</h1>
+          <h1 className="text-2xl text-right ml-5">Software Engineer</h1>
         </div>
       </div>
-      <div className={`w-[90%] flex sm:justify-center pb-3`}>
-        <div className="sm:w-1/2 flex justify-between flex-wrap sm:flex-row">
+      <div className="flex justify-center pb-3 w-[90%] max-w-[600px]">
+        <div className="flex justify-between flex-wrap sm:flex-nowrap w-full">
           <a
             href="#personal-projects"
             className="hover:underline underline-offset-8 w-1/2 sm:w-auto"
@@ -59,7 +59,7 @@ export default function Navbar() {
           </a>
           <a
             href="#hack-reactor"
-            className="hover:underline underline-offset-8 w-1/2 text-right sm:w-auto"
+            className="hover:underline underline-offset-8 w-1/2 sm:w-auto text-right"
           >
             HackReactor
           </a>
@@ -71,7 +71,7 @@ export default function Navbar() {
           </a>
           <a
             href="#contact"
-            className="hover:underline underline-offset-8 w-1/2 text-right sm:w-auto"
+            className="hover:underline underline-offset-8 w-1/2 sm:w-auto text-right"
           >
             Contact
           </a>
