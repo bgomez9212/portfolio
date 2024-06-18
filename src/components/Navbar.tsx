@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex-col flex items-center fixed top-0 left-0 right-0 bg-white dark:bg-black dark:text-white dark:shadow-white ${dynamicHeight.shadow}`}
+      className={`flex-col z-10 flex items-center fixed top-0 left-0 right-0 bg-white dark:bg-black dark:text-white dark:shadow-white ${dynamicHeight.shadow}`}
     >
       <div className="w-full flex justify-center mb-5">
         <div

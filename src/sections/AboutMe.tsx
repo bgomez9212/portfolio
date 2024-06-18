@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div className="w-3/4 sm:w-3/4 text-center text-md flex pt-96">
+    <div className="w-3/4 sm:w-3/4 text-center text-md flex pt-96 z-0">
       Hello, I am Brandon Gomez, a software engineer currently located in Reno,
       Nevada. Equipped with a solid foundation of both back-end and front-end
       technologies, I specialize in building applications from inception to

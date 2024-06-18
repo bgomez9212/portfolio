@@ -6,7 +6,7 @@ export default function PersonalProjects() {
       className="pt-mobileNav sm:pt-navbar flex flex-col w-[90%]"
       id="personal-projects"
     >
-      <h1 className="text-3xl mb-5 underline">Personal Projects</h1>
+      <h1 className="text-3xl mb-5 underline scroll-view">Personal Projects</h1>
       <div className="flex justify-evenly flex-wrap">
         <ProjectCard
           projectName="MealMachine"
