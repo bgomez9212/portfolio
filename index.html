@@ -9,5 +9,24 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+    <style>
+      .scroll-view {
+        animation: fade-in linear;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 500px;
+      }
+      @keyframes fade-in {
+        from {
+          scale: 0.6;
+          opacity: 0;
+        }
+        to {
+          scale: 1;
+          opacity: 1;
+        }
+      }
+    </style>
   </body>
 </html>
