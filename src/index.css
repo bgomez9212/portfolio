@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.scroll-view {
+/* .scroll-view {
   animation: fade-in linear;
   animation-timeline: view();
   animation-range-start: cover;
@@ -51,4 +51,4 @@
     scale: 1;
     opacity: 1;
   }
-}
+} */
