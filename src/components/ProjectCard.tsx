@@ -4,6 +4,7 @@ type ProjectCardProps = {
   deploymentLink: string;
   githubLink: string;
   figmaLink: string;
+  demoLink?: string;
 };
 
 export default function ProjectCard({
@@ -12,6 +13,7 @@ export default function ProjectCard({
   deploymentLink,
   githubLink,
   figmaLink,
+  demoLink,
 }: ProjectCardProps) {
   return (
     <>
@@ -20,14 +22,18 @@ export default function ProjectCard({
         <p className="mb-3">{description}</p>
         <div className="flex justify-end">
           <div className="flex justify-between">
-            {deploymentLink && (
+            {deploymentLink ? (
               <a
                 className="hover:underline underline-offset-8"
                 href={deploymentLink}
               >
                 Deployment Link
               </a>
-            )}
+            ) : demoLink ? (
+              <a className="hover:underline underline-offset-8" href={demoLink}>
+                Demo Link
+              </a>
+            ) : null}
             {githubLink && (
               <a
                 className="hover:underline underline-offset-8 ml-5"
