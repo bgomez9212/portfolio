@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   const [dynamicHeight, setDynamicHeight] = useState({
@@ -35,6 +36,9 @@ export default function Navbar() {
             paddingBottom: `${dynamicHeight.pad}px`,
           }}
         >
+          <div className="w-[90%] absolute md:flex items-end justify-end hidden">
+            <ModeToggle />
+          </div>
           <h1 className="text-2xl mr-5">Brandon Gomez</h1>
           <div
             id="pic-contain"
