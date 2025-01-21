@@ -26,11 +26,11 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex-col z-10 flex items-center fixed top-0 left-0 right-0 bg-white dark:bg-black dark:text-white dark:shadow-white ${dynamicHeight.shadow}`}
+      className={`flex-col z-10 flex items-center fixed top-0 left-0 right-0 bg-white dark:bg-deepSeaBlue dark:text-white dark:shadow-white ${dynamicHeight.shadow}`}
     >
-      <div className="w-full flex justify-center mb-5">
+      <div className="w-full flex justify-center mb-2">
         <div
-          className="flex items-center justify-center border-b-2 border-b-gray w-[90%]"
+          className="flex items-center justify-center border-b-2 border-b-iceBlue w-[90%]"
           style={{
             paddingTop: `${dynamicHeight.pad}px`,
             paddingBottom: `${dynamicHeight.pad}px`,
@@ -53,29 +53,30 @@ export default function Navbar() {
           <h1 className="text-2xl text-right ml-5">Software Engineer</h1>
         </div>
       </div>
+      <div className="border-b-2 border-b-shadowBlue w-4/5 mb-5" />
       <div className="flex justify-center pb-3 w-[90%] max-w-[600px]">
         <div className="flex justify-between flex-wrap sm:flex-nowrap w-full">
           <a
             href="#personal-projects"
-            className="hover:underline underline-offset-8 w-1/2 sm:w-auto"
+            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto"
           >
             Personal Projects
           </a>
           <a
             href="#hack-reactor"
-            className="hover:underline underline-offset-8 w-1/2 sm:w-auto text-right"
+            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto text-right"
           >
             HackReactor
           </a>
           <a
             href="#scrimba"
-            className="hover:underline underline-offset-8 w-1/2 sm:w-auto"
+            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto"
           >
             Scrimba
           </a>
           <a
             href="#contact"
-            className="hover:underline underline-offset-8 w-1/2 sm:w-auto text-right"
+            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto text-right"
           >
             Contact
           </a>

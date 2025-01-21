@@ -9,7 +9,7 @@ import { ThemeProvider } from "./components/ThemeProvider";
 function App() {
   return (
     <ThemeProvider>
-      <div className="flex flex-col items-center dark:bg-black dark:text-white">
+      <div className="flex flex-col items-center dark:bg-deepSeaBlue dark:text-white">
         <Navbar />
         <AboutMe />
         <PersonalProjects />
