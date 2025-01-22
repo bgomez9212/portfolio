@@ -53,7 +53,7 @@ export default function Navbar() {
           <h1 className="text-2xl text-right ml-5">Software Engineer</h1>
         </div>
       </div>
-      <div className="border-b-2 border-b-shadowBlue w-4/5 mb-5" />
+      <div className="border-b-2 border-b-shadowBlue w-4/5 mb-3" />
       <div className="flex justify-center pb-3 w-[90%] max-w-[600px]">
         <div className="flex justify-between flex-wrap sm:flex-nowrap w-full">
           <a
