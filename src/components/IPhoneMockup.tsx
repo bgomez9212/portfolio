@@ -1,10 +1,10 @@
 import camera from "../../public/camera.png";
 import frame from "../../public/frame.png";
 
-export default function IPhone({ screenshot }: { screenshot: string }) {
+export default function IPhoneMockup({ image }: { image: string }) {
   return (
     <div className="relative">
-      <img src={screenshot} className="h-full opacity-25" />
+      <img src={image} className="h-full opacity-25" />
       <div className="h-full absolute top-0">
         <img src={frame} />
       </div>
@@ -17,7 +17,7 @@ export default function IPhone({ screenshot }: { screenshot: string }) {
             borderBottomRightRadius: "15% 6%",
           }}
           className="brightness-75 hover:brightness-100 hover:shadow-custom hover:cursor-pointer"
-          src={screenshot}
+          src={image}
         />
       </div>
       <div className="absolute w-[30%] top-[2.5%] left-[35%]">
