@@ -68,18 +68,20 @@ export default function ProjectCard({
   image: string;
 }) {
   return (
-    <div className="border border-redAlert bg-gradient-to-r from-shadowBlue to-transparent to-75% rounded-lg w-4/5 flex my-10">
-      <div className="">
+    <div className="border border-redAlert bg-gradient-to-r from-shadowBlue to-transparent to-75% rounded-lg w-4/5 flex my-10 h-[350px] justify-between items-center pl-10">
+      <div id="text">
         <h1 className="text-4xl mb-2">Company/App</h1>
         <h3 className="text-sm italic mb-10">Job Title</h3>
         <p className="mb-2">Summary</p>
         <div>Technologies</div>
       </div>
-      {/* {cardType === "IPhone" ? (
-        <IPhoneMockup image={image} />
-      ) : (
-        <MacbookMockup image={image} />
-      )} */}
+      <div className="w-[60%]">
+        {cardType === "IPhone" ? (
+          <IPhoneMockup image={image} />
+        ) : (
+          <MacbookMockup image={image} />
+        )}
+      </div>
     </div>
   );
 }
