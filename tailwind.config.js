@@ -4,6 +4,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        custom: "0 0 35px 1px rgba(255, 255, 255, 0.8)",
+      },
       spacing: {
         navbar: "11rem",
         mobileNav: "12rem",
