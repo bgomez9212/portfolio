@@ -71,13 +71,13 @@ export default function ProjectCard({
     <div className="border border-redAlert bg-gradient-to-r from-shadowBlue to-transparent to-75% rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px]">
       <div id="text" className="flex flex-col justify-between py-10">
         <div>
-          <h1 className="text-4xl">Company/App</h1>
+          <h1 className="text-4xl mb-2">Company/App</h1>
           <h3 className="text-sm italic">Job Title</h3>
         </div>
         <p>Summary</p>
         <div>Technologies</div>
       </div>
-      <div id="mac" className="w-[51%]">
+      <div id="mac" className="flex items-center justify-end">
         <MacbookMockup image={image} />
       </div>
     </div>
