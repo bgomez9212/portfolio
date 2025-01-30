@@ -1,14 +1,14 @@
 import IPhoneMockup from "./IPhoneMockup";
 import MacbookMockup from "./MacbookMockup";
 
-type ProjectCardProps = {
-  projectName: string;
-  description: string;
-  deploymentLink: string;
-  githubLink: string;
-  figmaLink: string;
-  demoLink?: string;
-};
+// type ProjectCardProps = {
+//   projectName: string;
+//   description: string;
+//   deploymentLink: string;
+//   githubLink: string;
+//   figmaLink: string;
+//   demoLink?: string;
+// };
 
 // export default function ProjectCard({
 //   projectName,
@@ -64,23 +64,21 @@ export default function ProjectCard({
   cardType,
   image,
 }: {
-  cardType: "IPhone" | "Macbook";
+  cardType?: "IPhone" | "Macbook";
   image: string;
 }) {
   return (
-    <div className="border border-redAlert bg-gradient-to-r from-shadowBlue to-transparent to-75% rounded-lg w-4/5 flex my-10 h-[350px] justify-between items-center pl-10">
-      <div id="text">
-        <h1 className="text-4xl mb-2">Company/App</h1>
-        <h3 className="text-sm italic mb-10">Job Title</h3>
-        <p className="mb-2">Summary</p>
+    <div className="border border-redAlert bg-gradient-to-r from-shadowBlue to-transparent to-75% rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px]">
+      <div id="text" className="flex flex-col justify-between py-10">
+        <div>
+          <h1 className="text-4xl">Company/App</h1>
+          <h3 className="text-sm italic">Job Title</h3>
+        </div>
+        <p>Summary</p>
         <div>Technologies</div>
       </div>
-      <div className="w-[60%]">
-        {cardType === "IPhone" ? (
-          <IPhoneMockup image={image} />
-        ) : (
-          <MacbookMockup image={image} />
-        )}
+      <div id="mac" className="w-[51%]">
+        <MacbookMockup image={image} />
       </div>
     </div>
   );
