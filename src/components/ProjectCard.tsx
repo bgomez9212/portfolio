@@ -68,17 +68,23 @@ export default function ProjectCard({
   image: string;
 }) {
   return (
-    <div className="border border-redAlert bg-gradient-to-r from-shadowBlue to-transparent to-75% rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px]">
-      <div id="text" className="flex flex-col justify-between py-10">
+    <div
+      className={`border border-redAlert bg-gradient-to-r ${cardType === "Macbook" ? "from-shadowBlue" : "from-iceBlue"} to-transparent to-75% rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px]`}
+    >
+      <div id="text" className="flex flex-col justify-between py-10 w-1/3">
         <div>
-          <h1 className="text-4xl mb-2">Company/App</h1>
+          <h1 className="text-4xl mb-2">Company</h1>
           <h3 className="text-sm italic">Job Title</h3>
         </div>
         <p>Summary</p>
         <div>Technologies</div>
       </div>
       <div id="mac" className="flex items-center justify-end">
-        <MacbookMockup image={image} />
+        {cardType === "Macbook" ? (
+          <MacbookMockup image={image} />
+        ) : (
+          <IPhoneMockup image={image} />
+        )}
       </div>
     </div>
   );
