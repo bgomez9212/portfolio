@@ -69,9 +69,9 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className={`border border-redAlert bg-gradient-to-r ${cardType === "Macbook" ? "from-shadowBlue" : "from-iceBlue"} to-transparent to-75% rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px]`}
+      className={`border border-redAlert bg-gradient-to-r ${cardType === "Macbook" ? "from-shadowBlue" : "from-iceBlue"} to-transparent to-75% rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px] aspect-auto`}
     >
-      <div id="text" className="flex flex-col justify-between py-10 w-1/3">
+      <div id="text" className="flex flex-col justify-between py-10">
         <div>
           <h1 className="text-4xl mb-2">Company</h1>
           <h3 className="text-sm italic">Job Title</h3>
@@ -79,11 +79,13 @@ export default function ProjectCard({
         <p>Summary</p>
         <div>Technologies</div>
       </div>
-      <div id="mac" className="flex items-center justify-end">
+      <div className="flex items-center justify-end">
         {cardType === "Macbook" ? (
           <MacbookMockup image={image} />
         ) : (
-          <IPhoneMockup image={image} />
+          <div className="h-full">
+            <IPhoneMockup image={image} />
+          </div>
         )}
       </div>
     </div>

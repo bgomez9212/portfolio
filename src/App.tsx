@@ -14,7 +14,7 @@ function App() {
     <ThemeProvider>
       <div className="flex flex-col items-center dark:bg-deepSeaBlue dark:text-white">
         <ProjectCard cardType="Macbook" image={mealmachine} />
-        <ProjectCard cardType="IPhone" image={suplex} />
+        {/* <ProjectCard cardType="IPhone" image={suplex} />  */}
         {/* <Navbar />
         <AboutMe />
         <PersonalProjects />

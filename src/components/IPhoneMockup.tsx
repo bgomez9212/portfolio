@@ -3,8 +3,8 @@ import frame from "../../public/frame.png";
 
 export default function IPhoneMockup({ image }: { image: string }) {
   return (
-    <div className="relative">
-      <img src={frame} className="opacity-25" />
+    <div className="relative h-full">
+      <img src={frame} className="h-full opacity-25 max-h-full max-w-full" />
       <div className="absolute top-0">
         <img src={frame} />
       </div>
