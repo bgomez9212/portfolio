@@ -1,4 +1,4 @@
-import IPhoneMockup from "./IPhoneMockup";
+import IPhoneGroup from "./IPhoneGroup";
 import MacbookMockup from "./MacbookMockup";
 
 // type ProjectCardProps = {
@@ -83,9 +83,7 @@ export default function ProjectCard({
         {cardType === "Macbook" ? (
           <MacbookMockup image={image} />
         ) : (
-          <div className="h-full">
-            <IPhoneMockup image={image} />
-          </div>
+          <IPhoneGroup image={image} />
         )}
       </div>
     </div>
