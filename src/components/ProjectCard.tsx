@@ -10,7 +10,7 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className={`border border-redAlert bg-gradient-to-r ${cardType === "Macbook" ? "from-shadowBlue" : "from-iceBlue"} to-transparent to-75% rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px] aspect-auto`}
+      className={`border border-redAlert bg-gradient-to-r ${cardType === "Macbook" ? "from-shadowBlue" : "from-iceBlue"} to-transparent to-75% rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px]`}
     >
       <div id="text" className="flex flex-col justify-between py-10">
         <div>
@@ -20,7 +20,7 @@ export default function ProjectCard({
         <p>Summary</p>
         <div>Technologies</div>
       </div>
-      <div className="flex items-center justify-center w-1/2">
+      <div className="flex items-center justify-center w-1/2 max-h-[325px]">
         {cardType === "Macbook" ? (
           <MacbookMockup image={image} />
         ) : (
@@ -30,3 +30,5 @@ export default function ProjectCard({
     </div>
   );
 }
+
+// 1152/300
