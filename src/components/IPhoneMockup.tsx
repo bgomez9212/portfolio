@@ -1,5 +1,5 @@
-import camera from "../../public/camera.png";
-import frame from "../../public/frame.png";
+import camera from "/camera.png";
+import frame from "/frame.png";
 
 export default function IPhoneMockup({
   image,
@@ -12,7 +12,7 @@ export default function IPhoneMockup({
 }) {
   return (
     <div
-      className={`relative h-[100%] ${minusRotate ? `-rotate-${rotateDegree}` : `rotate-${rotateDegree}`}`}
+      className={`relative max-w-[143px] ${minusRotate ? `-rotate-${rotateDegree}` : `rotate-${rotateDegree}`}`}
     >
       <img src={frame} className="h-full max-h-full max-w-full" />
       <div className="absolute top-[1.3%] left-[3.5%] right-[3.1%]">

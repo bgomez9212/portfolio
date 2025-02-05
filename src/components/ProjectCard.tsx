@@ -11,7 +11,7 @@ export default function ProjectCard({
   return (
     <div
       id={`${cardType === "IPhone" ? "border-phone" : "border-macbook"}`}
-      className={`rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px] relative`}
+      className={`rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[300px] relative aspect-video`}
     >
       <div id="text" className="flex flex-col justify-between py-10">
         <div>
