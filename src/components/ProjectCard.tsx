@@ -28,7 +28,7 @@ export default function ProjectCard({
       id={`${cardType === "IPhone" ? "border-phone" : "border-macbook"}`}
       className={`rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[275px] relative`}
     >
-      <div id="text" className="flex flex-col py-10 justify-between">
+      <div id="text" className="flex flex-col py-10 justify-between w-1/2">
         <div>
           <h1 className="text-4xl mb-2">{project}</h1>
           <h3 className="text-sm italic">{jobTitle}</h3>
