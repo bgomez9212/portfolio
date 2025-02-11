@@ -1,21 +1,6 @@
 import IPhoneGroup from "./IPhoneGroup";
 import MacbookMockup from "./MacbookMockup";
-
-const techArr = [
-  { name: "expo", image: "/expo.png", link: "https://docs.expo.dev/" },
-  { name: "react", image: "/react.png", link: "https://react.dev/" },
-  {
-    name: "typescript",
-    image: "/typescript.png",
-    link: "https://www.typescriptlang.org/docs/",
-  },
-  {
-    name: "tailwind",
-    image: "/tailwind.png",
-    link: "https://v2.tailwindcss.com/docs",
-  },
-  { name: "vite", image: "/vite.png", link: "https://vite.dev/" },
-];
+import techArr from "../../technologies.json";
 
 export default function ProjectCard({
   cardType,
@@ -49,11 +34,11 @@ export default function ProjectCard({
           <h3 className="text-sm italic">{jobTitle}</h3>
         </div>
         <p className="">{summary}</p>
-        <div className="flex items-center h-6">
+        <div id="tech" className="flex items-center w-fit bg-white rounded-md">
           {techArr.map((tech) => {
             if (technologies.indexOf(tech.name) > -1) {
               return (
-                <a href={tech.link} target="_blank">
+                <a href={tech.link} target="_blank" key={tech.name}>
                   <img
                     className="h-5 m-1 cursor-pointer transform transition duration-300 ease-in-out hover:scale-150"
                     src={tech.image}

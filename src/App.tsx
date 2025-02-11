@@ -22,7 +22,13 @@ function App() {
           project="Suplex"
           jobTitle="Fullstack Mobile Engineer"
           summary="Mobile application for rating professional wrestling matches"
-          technologies={["expo", "react", "typescript", "nativewind", "node"]}
+          technologies={[
+            "expo",
+            "react-native",
+            "typescript",
+            "nativewind",
+            "node",
+          ]}
         />
         {/* <Navbar />
         <AboutMe />
