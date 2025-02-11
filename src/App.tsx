@@ -12,6 +12,7 @@ function App() {
           project="MealMachine"
           jobTitle="Full Stack Engineer"
           summary="Application that suggests recipes based on available ingredients"
+          technologies={["vite", "react", "typescript", "tailwind", "node"]}
         />
         <ProjectCard
           cardType="IPhone"
@@ -21,6 +22,7 @@ function App() {
           project="Suplex"
           jobTitle="Fullstack Mobile Engineer"
           summary="Mobile application for rating professional wrestling matches"
+          technologies={["expo", "react", "typescript", "nativewind", "node"]}
         />
         {/* <Navbar />
         <AboutMe />
