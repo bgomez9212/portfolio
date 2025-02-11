@@ -1,0 +1,41 @@
+[
+  {
+    "name": "css",
+    "image": "/css.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  { "name": "expo", "image": "/expo.png", "link": "https://docs.expo.dev/" },
+  {
+    "name": "html",
+    "image": "/html.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  {
+    "name": "javascript",
+    "image": "/javascript.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "name": "nativewind",
+    "image": "/nativewind.png",
+    "link": "https://www.nativewind.dev/"
+  },
+  { "name": "node", "image": "/node.png", "link": "https://nodejs.org/en" },
+  { "name": "react", "image": "/react.png", "link": "https://react.dev/" },
+  {
+    "name": "react-native",
+    "image": "/react.png",
+    "link": "https://reactnative.dev/docs/getting-started"
+  },
+  {
+    "name": "tailwind",
+    "image": "/tailwind.png",
+    "link": "https://v2.tailwindcss.com/docs"
+  },
+  {
+    "name": "typescript",
+    "image": "/typescript.png",
+    "link": "https://www.typescriptlang.org/docs/"
+  },
+  { "name": "vite", "image": "/vite.png", "link": "https://vite.dev/" }
+]
