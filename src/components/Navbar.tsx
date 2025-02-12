@@ -39,7 +39,7 @@ export default function Navbar() {
           <div className="w-[90%] absolute md:flex items-end justify-end hidden">
             <ModeToggle />
           </div>
-          <h1 className="text-2xl mr-5">Brandon Gomez</h1>
+          <h1 className="text-2xl mr-10">Brandon Gomez</h1>
           <div
             id="pic-contain"
             style={{
@@ -50,7 +50,7 @@ export default function Navbar() {
           >
             <img src="/self.jpg" className="w-full object-cover rounded-full" />
           </div>
-          <h1 className="text-2xl text-right ml-5">Software Engineer</h1>
+          <h1 className="text-2xl text-right ml-10">Software Engineer</h1>
         </div>
       </div>
       <div className="border-b-2 border-b-shadowBlue w-4/5 mb-3" />

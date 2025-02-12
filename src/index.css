@@ -20,7 +20,7 @@
   background-origin: padding-box, border-box;
 }
 
-/* .scroll-view {
+.scroll-view {
   animation: fade-in linear;
   animation-timeline: view();
   animation-range-start: cover;
@@ -69,7 +69,7 @@
     scale: 1;
     opacity: 1;
   }
-} */
+}
 
 @layer base {
   :root {
