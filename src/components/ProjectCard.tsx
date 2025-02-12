@@ -11,6 +11,7 @@ export default function ProjectCard({
   jobTitle,
   summary,
   technologies,
+  repoLink,
 }: {
   cardType: "IPhone" | "Macbook";
   image1: string;
@@ -20,13 +21,14 @@ export default function ProjectCard({
   jobTitle: string;
   summary: string;
   technologies: string[];
+  repoLink: string;
 }) {
   image2 = image2 || "/placeholder.png";
   image3 = image3 || "/placeholder.png";
   return (
     <div
       id={`${cardType === "IPhone" ? "border-phone" : "border-macbook"}`}
-      className={`rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[275px] relative`}
+      className={`rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[275px] relative scroll-view`}
     >
       <div id="text" className="flex flex-col py-10 justify-between w-1/2">
         <div>
@@ -47,6 +49,12 @@ export default function ProjectCard({
               );
             }
           })}
+          <a href={repoLink} target="_blank">
+            <img
+              src="/github.png"
+              className="h-5 m-1 cursor-pointer transform transition duration-300 ease-in-out hover:scale-150"
+            />
+          </a>
         </div>
       </div>
       <div className="flex items-center justify-center w-1/2">

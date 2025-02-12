@@ -1,11 +1,14 @@
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./components/ThemeProvider";
 import ProjectCard from "./components/ProjectCard";
+import AboutMe from "./sections/AboutMe";
 
 function App() {
   return (
     <ThemeProvider>
       <div className="flex flex-col items-center dark:bg-deepSeaBlue dark:text-white">
+        <Navbar />
+        <AboutMe />
         <ProjectCard
           cardType="Macbook"
           image1="/mealmachine.png"
@@ -13,6 +16,7 @@ function App() {
           jobTitle="Full Stack Engineer"
           summary="Application that suggests recipes based on available ingredients"
           technologies={["vite", "react", "typescript", "tailwind", "node"]}
+          repoLink="https://github.com/bgomez9212/MealMachineRedux"
         />
         <ProjectCard
           cardType="IPhone"
@@ -29,6 +33,7 @@ function App() {
             "nativewind",
             "node",
           ]}
+          repoLink="https://github.com/bgomez9212/digitalNotebook"
         />
         {/* <Navbar />
         <AboutMe />
