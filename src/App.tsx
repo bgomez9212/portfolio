@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./components/ThemeProvider";
 import ProjectCard from "./components/ProjectCard";
 import AboutMe from "./sections/AboutMe";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
@@ -35,12 +36,16 @@ function App() {
           ]}
           repoLink="https://github.com/bgomez9212/digitalNotebook"
         />
-        {/* <Navbar />
-        <AboutMe />
-        <PersonalProjects />
-        <HackReactor />
-        <Scrimba />
-        <Contact /> */}
+        <ProjectCard
+          cardType="Macbook"
+          image1="/neonCollab.png"
+          project="neonCollab"
+          jobTitle="Chat Engineer"
+          summary="Developed chat feature for leetcode-type application with social media features"
+          technologies={["react", "css", "node"]}
+          repoLink="https://github.com/Neon-Collab/Neon-Collab?tab=readme-ov-file#feedback-page"
+        />
+        <Contact />
       </div>
     </ThemeProvider>
   );
