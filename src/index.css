@@ -25,44 +25,12 @@
   animation-timeline: view();
   animation-range-start: cover;
   animation-range-end: 500px;
+  animation-range-start: -20px;
 }
 
 @keyframes fade-in {
   from {
-    scale: 0.6;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    scale: 0.6;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fade-in {
-  from {
-    scale: 0.6;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fade-in {
-  from {
-    scale: 0.6;
+    scale: 0.5;
     opacity: 0;
   }
   to {
