@@ -13,7 +13,7 @@ export default function IPhoneMockup({ image }: { image: string }) {
             borderBottomLeftRadius: "13% 6%",
             borderBottomRightRadius: "15% 6%",
           }}
-          className="brightness-75 hover:brightness-100 hover:shadow-custom hover:cursor-pointer"
+          className="brightness-75 hover:brightness-100 hover:shadow-custom hover:cursor-pointer w-full h-full object-fill"
           src={image}
         />
       </div>
