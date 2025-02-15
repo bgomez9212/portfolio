@@ -16,7 +16,14 @@ function App() {
           project="MealMachine"
           jobTitle="Full Stack Engineer"
           summary="Application that suggests recipes based on available ingredients"
-          technologies={["vite", "react", "typescript", "tailwind", "node"]}
+          technologies={[
+            "vite",
+            "react",
+            "typescript",
+            "tailwind",
+            "node",
+            "postgres",
+          ]}
           repoLink="https://github.com/bgomez9212/MealMachineRedux"
         />
         <ProjectCard
@@ -33,6 +40,7 @@ function App() {
             "typescript",
             "nativewind",
             "node",
+            "postgres",
           ]}
           repoLink="https://github.com/bgomez9212/digitalNotebook"
         />
@@ -42,7 +50,7 @@ function App() {
           project="neonCollab"
           jobTitle="Chat Engineer"
           summary="Developed chat feature for leetcode-type application with social media features."
-          technologies={["react", "css", "node"]}
+          technologies={["react", "css", "node", "postgres"]}
           repoLink="https://github.com/Neon-Collab/Neon-Collab?tab=readme-ov-file#feedback-page"
         />
         <ProjectCard
@@ -51,7 +59,7 @@ function App() {
           jobTitle="Backend Engineer"
           summary="Created the 'Questions and Answers' leg of an API for a retail website."
           repoLink="https://github.com/TypeRave/QuestionsAndAnswers"
-          technologies={["node"]}
+          technologies={["node", "postgres"]}
         />
         <Contact />
       </div>

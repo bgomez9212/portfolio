@@ -21,6 +21,11 @@
     "link": "https://www.nativewind.dev/"
   },
   { "name": "node", "image": "/node.png", "link": "https://nodejs.org/en" },
+  {
+    "name": "postgres",
+    "image": "/postgres.png",
+    "link": "https://www.postgresql.org/docs/"
+  },
   { "name": "react", "image": "/react.png", "link": "https://react.dev/" },
   {
     "name": "react-native",
