@@ -26,7 +26,7 @@ function App() {
           image3="/suplex-3.png"
           project="Suplex"
           jobTitle="Fullstack Mobile Engineer"
-          summary="Mobile application for rating professional wrestling matches"
+          summary="Mobile application for rating professional wrestling matches."
           technologies={[
             "expo",
             "react-native",
@@ -41,9 +41,17 @@ function App() {
           image1="/neonCollab.png"
           project="neonCollab"
           jobTitle="Chat Engineer"
-          summary="Developed chat feature for leetcode-type application with social media features"
+          summary="Developed chat feature for leetcode-type application with social media features."
           technologies={["react", "css", "node"]}
           repoLink="https://github.com/Neon-Collab/Neon-Collab?tab=readme-ov-file#feedback-page"
+        />
+        <ProjectCard
+          cardType="API"
+          project="TypeRave API"
+          jobTitle="Backend Engineer"
+          summary="Created the 'Questions and Answers' leg of an API for a retail website."
+          repoLink="https://github.com/TypeRave/QuestionsAndAnswers"
+          technologies={["node"]}
         />
         <Contact />
       </div>
