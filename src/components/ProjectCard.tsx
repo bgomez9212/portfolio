@@ -13,8 +13,8 @@ export default function ProjectCard({
   technologies,
   repoLink,
 }: {
-  cardType: "IPhone" | "Macbook";
-  image1: string;
+  cardType: "IPhone" | "Macbook" | "API";
+  image1?: string;
   image2?: string;
   image3?: string;
   project: string;
@@ -23,12 +23,13 @@ export default function ProjectCard({
   technologies: string[];
   repoLink: string;
 }) {
+  image1 = image1 || "/placeholder.png";
   image2 = image2 || "/placeholder.png";
   image3 = image3 || "/placeholder.png";
   return (
     <div
-      id={`${cardType === "IPhone" ? "border-phone" : "border-macbook"}`}
-      className={`rounded-lg w-4/5 flex my-10 justify-between px-10 max-h-[275px] relative scroll-view`}
+      id={`${cardType === "IPhone" ? "border-phone" : cardType === "Macbook" ? "border-macbook" : "border-api"}`}
+      className={`rounded-lg w-4/5 flex my-10 justify-between px-10 h-[275px] relative scroll-view`}
     >
       <div id="text" className="flex flex-col py-10 justify-between w-1/2">
         <div>
@@ -60,8 +61,10 @@ export default function ProjectCard({
       <div className="flex items-center justify-center w-1/2">
         {cardType === "Macbook" ? (
           <MacbookMockup image={image1} />
-        ) : (
+        ) : cardType === "IPhone" ? (
           <IPhoneGroup image1={image1} image2={image2} image3={image3} />
+        ) : (
+          <img id="api" src="/api.png" className="p-10" />
         )}
       </div>
     </div>
