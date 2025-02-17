@@ -48,18 +48,27 @@ function App() {
           cardType="Macbook"
           image1="/neonCollab.png"
           project="neonCollab"
-          jobTitle="Chat Engineer"
-          summary="Developed chat feature for leetcode-type application with social media features."
+          jobTitle="Fullstack Software Engineer"
+          summary="Developed chat feature for leetcode-type application with social media features. I was responsible for the chat feature."
           technologies={["react", "css", "node", "postgres"]}
           repoLink="https://github.com/Neon-Collab/Neon-Collab?tab=readme-ov-file#feedback-page"
         />
         <ProjectCard
           cardType="API"
           project="TypeRave API"
-          jobTitle="Backend Engineer"
+          jobTitle="Backend Software Engineer"
           summary="Created the 'Questions and Answers' leg of an API for a retail website."
           repoLink="https://github.com/TypeRave/QuestionsAndAnswers"
           technologies={["node", "postgres"]}
+        />
+        <ProjectCard
+          cardType="Macbook"
+          project="Omega Outlet"
+          jobTitle="Frontend Software Engineer"
+          summary="Web application for retail clothing store. My responsibility was the ratings and reviews section."
+          repoLink="https://github.com/Omega-outlet/FEC?tab=readme-ov-file#ratings--reviews"
+          technologies={["react", "css", "node"]}
+          image1="/omegaoutlet.png"
         />
         <Contact />
       </div>
