@@ -33,6 +33,11 @@
     "link": "https://reactnative.dev/docs/getting-started"
   },
   {
+    "name": "selectolax",
+    "image": "/selectolax.png",
+    "link": "https://selectolax.readthedocs.io/en/latest/index.html"
+  },
+  {
     "name": "tailwind",
     "image": "/tailwind.png",
     "link": "https://v2.tailwindcss.com/docs"

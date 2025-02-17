@@ -11,22 +11,6 @@ function App() {
         <Navbar />
         <AboutMe />
         <ProjectCard
-          cardType="Macbook"
-          image1="/mealmachine.png"
-          project="MealMachine"
-          jobTitle="Full Stack Engineer"
-          summary="Application that suggests recipes based on available ingredients"
-          technologies={[
-            "vite",
-            "react",
-            "typescript",
-            "tailwind",
-            "node",
-            "postgres",
-          ]}
-          repoLink="https://github.com/bgomez9212/MealMachineRedux"
-        />
-        <ProjectCard
           cardType="IPhone"
           image1="/suplex.png"
           image2="/suplex-2.png"
@@ -43,6 +27,30 @@ function App() {
             "postgres",
           ]}
           repoLink="https://github.com/bgomez9212/digitalNotebook"
+        />
+        <ProjectCard
+          cardType="API"
+          project="Suplex API"
+          jobTitle="Backend Software Engineer"
+          summary="API for Suplex Application. Developed a web scraper to intermittently injects data into database."
+          technologies={["python", "postgres", "selectolax"]}
+          repoLink="https://github.com/bgomez9212/digitalNotebook"
+        />
+        <ProjectCard
+          cardType="Macbook"
+          image1="/mealmachine.png"
+          project="MealMachine"
+          jobTitle="Full Stack Engineer"
+          summary="Application that suggests recipes based on available ingredients"
+          technologies={[
+            "vite",
+            "react",
+            "typescript",
+            "tailwind",
+            "node",
+            "postgres",
+          ]}
+          repoLink="https://github.com/bgomez9212/MealMachineRedux"
         />
         <ProjectCard
           cardType="Macbook"
