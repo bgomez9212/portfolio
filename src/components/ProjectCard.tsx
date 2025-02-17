@@ -57,7 +57,7 @@ export default function ProjectCard({
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-center w-1/2">
+      <div className="flex items-center justify-end w-1/2">
         {cardType === "Macbook" ? (
           <MacbookMockup image={image1} />
         ) : cardType === "IPhone" ? (
