@@ -63,7 +63,7 @@ export default function ProjectCard({
         ) : cardType === "IPhone" ? (
           <IPhoneGroup image1={image1} image2={image2} image3={image3} />
         ) : (
-          <img id="api" src="/api.png" className="p-10" />
+          <img id="api" src="/api.png" className="scale-[.8]" />
         )}
       </div>
     </div>
