@@ -28,8 +28,7 @@ export default function ProjectCard({
   image3 = image3 || "/placeholder.png";
   return (
     <div
-      id={`${cardType === "IPhone" ? "border-phone" : cardType === "Macbook" ? "border-macbook" : "border-api"}`}
-      className={`rounded-lg w-4/5 flex my-10 justify-between px-10 h-[275px] relative scroll-view`}
+      className={`rounded-lg w-4/5 flex my-10 justify-between px-10 h-[275px] relative scroll-view ${cardType === "IPhone" ? "border-phone dark:border-phone" : cardType === "Macbook" ? "border-macbook dark:border-macbook" : "border-api dark:border-api"}`}
     >
       <div id="text" className="flex flex-col py-10 justify-between w-1/2">
         <div>

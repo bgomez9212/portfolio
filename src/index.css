@@ -2,29 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-#border-macbook {
+.border-macbook {
   border: 2px solid transparent;
   border-radius: 20px;
-  background: linear-gradient(to right, #68a2b9, #001628),
-    linear-gradient(to right, rgb(0, 0, 0, 0), #e9072b);
+  background: linear-gradient(to right, #ffffff, #68a2b9),
+    linear-gradient(to left, rgb(0, 0, 0, 0), #e9072b);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
 }
 
-#border-phone {
+.border-phone {
   border: 2px solid transparent;
   border-radius: 20px;
-  background: linear-gradient(to right, #99d9d9, #001628),
-    linear-gradient(to right, rgb(0, 0, 0, 0), #e9072b);
+  background: linear-gradient(to right, #ffffff, #99d9d9),
+    linear-gradient(to left, rgb(0, 0, 0, 0), #e9072b);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
 }
 
-#border-api {
+.border-api {
   border: 2px solid transparent;
   border-radius: 20px;
-  background: linear-gradient(to right, #355464, #001628),
-    linear-gradient(to right, rgb(0, 0, 0, 0), #e9072b);
+  background: linear-gradient(to right, #ffffff, #355464),
+    linear-gradient(to left, rgb(0, 0, 0, 0), #e9072b);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
 }
@@ -162,5 +162,34 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .border-macbook {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(to right, #68a2b9, #001628),
+      linear-gradient(to right, rgb(0, 0, 0, 0), #e9072b);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+
+  .border-phone {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(to right, #99d9d9, #001628),
+      linear-gradient(to right, rgb(0, 0, 0, 0), #e9072b);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+
+  .border-api {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(to right, #355464, #001628),
+      linear-gradient(to right, rgb(0, 0, 0, 0), #e9072b);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
   }
 }
