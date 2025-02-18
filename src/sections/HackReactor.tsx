@@ -6,7 +6,7 @@ export default function HackReactor() {
       className="pt-mobileNav sm:pt-navbar flex flex-col w-[90%]"
       id="hack-reactor"
     >
-      <h1 className="text-3xl mb-5 underline scroll-view">HackReactor</h1>
+      <h1 className="text-3xl underline scroll-view">HackReactor</h1>
       <div className="flex justify-evenly flex-wrap">
         <ProjectCard
           cardType="Macbook"

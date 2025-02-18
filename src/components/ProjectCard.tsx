@@ -28,14 +28,14 @@ export default function ProjectCard({
   image3 = image3 || "/placeholder.png";
   return (
     <div
-      className={`rounded-lg w-full flex my-10 justify-between px-10 h-[275px] relative scroll-view ${cardType === "IPhone" ? "border-phone dark:border-phone" : cardType === "Macbook" ? "border-macbook dark:border-macbook" : "border-api dark:border-api"}`}
+      className={`rounded-lg w-full flex my-10 justify-between px-10 md:h-[275px] relative scroll-view ${cardType === "IPhone" ? "border-phone dark:border-phone" : cardType === "Macbook" ? "border-macbook dark:border-macbook" : "border-api dark:border-api"}`}
     >
-      <div id="text" className="flex flex-col py-10 justify-between w-1/2">
+      <div id="text" className="flex flex-col py-10 justify-between md:w-1/2">
         <div>
-          <h1 className="text-4xl mb-2">{project}</h1>
-          <h3 className="text-sm italic">{jobTitle}</h3>
+          <h1 className="text-4xl pb-3">{project}</h1>
+          <h3 className="text-sm italic pb-3">{jobTitle}</h3>
         </div>
-        <p className="">{summary}</p>
+        <p className="pb-3">{summary}</p>
         <div id="tech" className="flex items-center w-fit bg-white rounded-md">
           {techArr.map((tech) => {
             if (technologies.indexOf(tech.name) > -1) {
@@ -57,7 +57,7 @@ export default function ProjectCard({
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-end w-1/2">
+      <div className="hidden md:flex items-center justify-end w-1/2">
         {cardType === "Macbook" ? (
           <MacbookMockup image={image1} />
         ) : cardType === "IPhone" ? (
