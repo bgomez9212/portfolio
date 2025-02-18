@@ -1,51 +1,67 @@
 [
   {
     "name": "css",
-    "image": "/css.png",
+    "image": "/technologies/css.png",
     "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
   },
-  { "name": "expo", "image": "/expo.png", "link": "https://docs.expo.dev/" },
+  {
+    "name": "expo",
+    "image": "/technologies/expo.png",
+    "link": "https://docs.expo.dev/"
+  },
   {
     "name": "html",
-    "image": "/html.png",
+    "image": "/technologies/html.png",
     "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
   },
   {
     "name": "javascript",
-    "image": "/javascript.png",
+    "image": "/technologies/javascript.png",
     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   {
     "name": "nativewind",
-    "image": "/nativewind.png",
+    "image": "/technologies/nativewind.png",
     "link": "https://www.nativewind.dev/"
   },
-  { "name": "node", "image": "/node.png", "link": "https://nodejs.org/en" },
+  {
+    "name": "node",
+    "image": "/technologies/node.png",
+    "link": "https://nodejs.org/en"
+  },
   {
     "name": "postgres",
-    "image": "/postgres.png",
+    "image": "/technologies/postgres.png",
     "link": "https://www.postgresql.org/docs/"
   },
-  { "name": "react", "image": "/react.png", "link": "https://react.dev/" },
+  {
+    "name": "react",
+    "image": "/technologies/react.png",
+    "link": "https://react.dev/"
+  },
   {
     "name": "react-native",
-    "image": "/react.png",
+    "image": "/technologies/react.png",
     "link": "https://reactnative.dev/docs/getting-started"
   },
   {
     "name": "selectolax",
-    "image": "/selectolax.png",
+    "image": "/technologies/selectolax.png",
     "link": "https://selectolax.readthedocs.io/en/latest/index.html"
   },
   {
     "name": "tailwind",
-    "image": "/tailwind.png",
+    "image": "/technologies/tailwind.png",
     "link": "https://v2.tailwindcss.com/docs"
   },
   {
     "name": "typescript",
-    "image": "/typescript.png",
+    "image": "/technologies/typescript.png",
     "link": "https://www.typescriptlang.org/docs/"
   },
-  { "name": "vite", "image": "/vite.png", "link": "https://vite.dev/" }
+  {
+    "name": "vite",
+    "image": "/technologies/vite.png",
+    "link": "https://vite.dev/"
+  }
 ]
