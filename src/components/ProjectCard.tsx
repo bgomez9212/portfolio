@@ -28,7 +28,7 @@ export default function ProjectCard({
   image3 = image3 || "/placeholder.png";
   return (
     <div
-      className={`rounded-lg w-4/5 flex my-10 justify-between px-10 h-[275px] relative scroll-view ${cardType === "IPhone" ? "border-phone dark:border-phone" : cardType === "Macbook" ? "border-macbook dark:border-macbook" : "border-api dark:border-api"}`}
+      className={`rounded-lg w-full flex my-10 justify-between px-10 h-[275px] relative scroll-view ${cardType === "IPhone" ? "border-phone dark:border-phone" : cardType === "Macbook" ? "border-macbook dark:border-macbook" : "border-api dark:border-api"}`}
     >
       <div id="text" className="flex flex-col py-10 justify-between w-1/2">
         <div>
@@ -51,7 +51,7 @@ export default function ProjectCard({
           })}
           <a href={repoLink} target="_blank">
             <img
-              src="/github.png"
+              src="/technologies/github.png"
               className="h-5 m-1 cursor-pointer transform transition duration-300 ease-in-out hover:scale-150"
             />
           </a>
@@ -63,7 +63,7 @@ export default function ProjectCard({
         ) : cardType === "IPhone" ? (
           <IPhoneGroup image1={image1} image2={image2} image3={image3} />
         ) : (
-          <img id="api" src="/api.png" className="scale-[.8]" />
+          <img id="api" src="/demos/api.png" className="scale-[.8]" />
         )}
       </div>
     </div>

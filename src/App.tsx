@@ -3,6 +3,9 @@ import { ThemeProvider } from "./components/ThemeProvider";
 import ProjectCard from "./components/ProjectCard";
 import AboutMe from "./sections/AboutMe";
 import Contact from "./sections/Contact";
+import PersonalProjects from "./sections/PersonalProjects";
+import HackReactor from "./sections/HackReactor";
+import Scrimba from "./sections/Scrimba";
 
 function App() {
   return (
@@ -10,7 +13,10 @@ function App() {
       <div className="flex flex-col items-center dark:bg-deepSeaBlue dark:text-white">
         <Navbar />
         <AboutMe />
-        <ProjectCard
+        <PersonalProjects />
+        <HackReactor />
+        <Scrimba />
+        {/* <ProjectCard
           cardType="IPhone"
           image1="/suplex.png"
           image2="/suplex-2.png"
@@ -51,8 +57,8 @@ function App() {
             "postgres",
           ]}
           repoLink="https://github.com/bgomez9212/MealMachineRedux"
-        />
-        <ProjectCard
+        /> */}
+        {/* <ProjectCard
           cardType="Macbook"
           image1="/neonCollab.png"
           project="neonCollab"
@@ -77,7 +83,7 @@ function App() {
           repoLink="https://github.com/Omega-outlet/FEC?tab=readme-ov-file#ratings--reviews"
           technologies={["react", "css", "node"]}
           image1="/omegaoutlet.png"
-        />
+        /> */}
         <Contact />
       </div>
     </ThemeProvider>
