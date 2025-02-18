@@ -1,4 +1,4 @@
-import macbook from "/macbook.png";
+import macbook from "/demos/macbook.png";
 
 export default function MacbookMockup({ image }: { image: string }) {
   return (

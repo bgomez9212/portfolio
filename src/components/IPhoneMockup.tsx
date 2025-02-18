@@ -1,5 +1,5 @@
-import camera from "/camera.png";
-import frame from "/frame.png";
+import camera from "/demos/camera.png";
+import frame from "/demos/frame.png";
 
 export default function IPhoneMockup({ image }: { image: string }) {
   return (
