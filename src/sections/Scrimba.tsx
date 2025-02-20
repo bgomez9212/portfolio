@@ -2,10 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Scrimba() {
   return (
-    <div
-      className="pt-mobileNav sm:pt-navbar flex flex-col w-[90%]"
-      id="scrimba"
-    >
+    <div className="pt-mobileNav sm:pt-navbar flex flex-col w-4/5" id="scrimba">
       <h1 className="text-3xl underline scroll-view">Scrimba</h1>
       <div className="flex justify-evenly flex-wrap">
         {/* <ProjectCard
@@ -23,6 +20,7 @@ export default function Scrimba() {
           image1="/projects/quizzical.png"
           technologies={["react", "css"]}
           repoLink="https://github.com/bgomez9212/scrimbaQuizzical"
+          siteLink="https://scrimbaquizzical-production.up.railway.app/"
         />
         {/* <ProjectCard
           projectName="Movie Watchlist"
@@ -38,6 +36,7 @@ export default function Scrimba() {
           summary="Web app used to create a watchlist, using the Open Movie Database API (https://www.omdbapi.com/)."
           technologies={["javascript", "html", "css"]}
           repoLink="https://github.com/bgomez9212/scrimbaMovieWatchlist"
+          siteLink="https://scrimbamoviewatchlist-production.up.railway.app/"
           image1="/projects/watchlist.png"
         />
         {/* <ProjectCard

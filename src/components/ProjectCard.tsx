@@ -12,6 +12,7 @@ export default function ProjectCard({
   summary,
   technologies,
   repoLink,
+  siteLink,
 }: {
   cardType: "IPhone" | "Macbook" | "API";
   image1?: string;
@@ -22,6 +23,7 @@ export default function ProjectCard({
   summary: string;
   technologies: string[];
   repoLink: string;
+  siteLink: string;
 }) {
   image1 = image1 || "/placeholder.png";
   image2 = image2 || "/placeholder.png";
@@ -56,14 +58,26 @@ export default function ProjectCard({
             />
           </a>
         </div>
+        <div className="w-full flex justify-end mt-5 text-lg">
+          <a className="sm:hidden" target="_black" href={siteLink}>
+            {"See More >"}
+          </a>
+        </div>
       </div>
       <div className="hidden md:flex items-center justify-end w-1/2">
         {cardType === "Macbook" ? (
-          <MacbookMockup image={image1} />
+          <MacbookMockup image={image1} siteLink={siteLink} />
         ) : cardType === "IPhone" ? (
-          <IPhoneGroup image1={image1} image2={image2} image3={image3} />
+          <IPhoneGroup
+            image1={image1}
+            image2={image2}
+            image3={image3}
+            siteLink={siteLink}
+          />
         ) : (
-          <img id="api" src="/demos/api.png" className="scale-[.8]" />
+          <a href={siteLink} target="_blank">
+            <img id="api" src="/demos/api.png" className="scale-[.8]" />
+          </a>
         )}
       </div>
     </div>

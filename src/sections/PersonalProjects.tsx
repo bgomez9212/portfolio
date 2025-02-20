@@ -25,6 +25,7 @@ export default function PersonalProjects() {
             "postgres",
           ]}
           repoLink="https://github.com/bgomez9212/digitalNotebook"
+          siteLink="https://github.com/bgomez9212/digitalNotebook"
         />
         <ProjectCard
           cardType="API"
@@ -33,6 +34,7 @@ export default function PersonalProjects() {
           summary="API for Suplex Application. Developed a web scraper to intermittently injects data into database."
           technologies={["python", "postgres", "selectolax"]}
           repoLink="https://github.com/bgomez9212/digitalNotebook"
+          siteLink="https://github.com/bgomez9212/digitalNotebook"
         />
         <ProjectCard
           cardType="Macbook"
@@ -49,6 +51,7 @@ export default function PersonalProjects() {
             "postgres",
           ]}
           repoLink="https://github.com/bgomez9212/MealMachineRedux"
+          siteLink="https://mealmachine.up.railway.app/"
         />
       </div>
     </div>

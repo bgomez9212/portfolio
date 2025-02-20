@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 export default function HackReactor() {
   return (
     <div
-      className="pt-mobileNav sm:pt-navbar flex flex-col w-[90%]"
+      className="pt-mobileNav sm:pt-navbar flex flex-col w-4/5"
       id="hack-reactor"
     >
       <h1 className="text-3xl underline scroll-view">HackReactor</h1>
@@ -16,6 +16,7 @@ export default function HackReactor() {
           summary="Developed chat feature for leetcode-type application with social media features. I was responsible for the chat feature."
           technologies={["react", "css", "node", "postgres"]}
           repoLink="https://github.com/Neon-Collab/Neon-Collab?tab=readme-ov-file#feedback-page"
+          siteLink="https://github.com/Neon-Collab/Neon-Collab?tab=readme-ov-file#feedback-page"
         />
         <ProjectCard
           cardType="API"
@@ -24,6 +25,7 @@ export default function HackReactor() {
           summary="Created the 'Questions and Answers' leg of an API for a retail website."
           repoLink="https://github.com/TypeRave/QuestionsAndAnswers"
           technologies={["node", "postgres"]}
+          siteLink="https://github.com/TypeRave/QuestionsAndAnswers"
         />
         <ProjectCard
           cardType="Macbook"
@@ -33,6 +35,7 @@ export default function HackReactor() {
           repoLink="https://github.com/Omega-outlet/FEC?tab=readme-ov-file#ratings--reviews"
           technologies={["react", "css", "node"]}
           image1="/projects/omegaoutlet.png"
+          siteLink="https://github.com/Omega-outlet/FEC?tab=readme-ov-file#ratings--reviews"
         />
       </div>
     </div>
