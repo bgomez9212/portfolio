@@ -34,10 +34,10 @@ export default function ProjectCard({
     >
       <div id="text" className="flex flex-col py-10 justify-between md:w-1/2">
         <div>
-          <h1 className="text-4xl pb-3">{project}</h1>
-          <h3 className="text-sm italic pb-3">{jobTitle}</h3>
+          <h1 className="text-4xl pb-3 sm:pb-0">{project}</h1>
+          <h3 className="text-sm italic pb-3 sm:pb-0">{jobTitle}</h3>
         </div>
-        <p className="pb-3">{summary}</p>
+        <p className="pb-3 sm:pb-0">{summary}</p>
         <div id="tech" className="flex items-center w-fit bg-white rounded-md">
           {techArr.map((tech) => {
             if (technologies.indexOf(tech.name) > -1) {
@@ -58,8 +58,8 @@ export default function ProjectCard({
             />
           </a>
         </div>
-        <div className="w-full flex justify-end mt-5 text-lg">
-          <a className="sm:hidden" target="_black" href={siteLink}>
+        <div className="w-full flex justify-end mt-5 text-lg sm:hidden">
+          <a target="_black" href={siteLink}>
             {"See More >"}
           </a>
         </div>
