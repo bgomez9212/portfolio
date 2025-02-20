@@ -46,7 +46,7 @@ export default function Navbar() {
               height: `${dynamicHeight.pic}px`,
               width: `${dynamicHeight.pic}px`,
             }}
-            className="flex justify-center"
+            className="flex justify-center items-center md:items-stretch"
           >
             <img src="/self.jpg" className="w-full object-cover rounded-full" />
           </div>
