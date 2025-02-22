@@ -1,6 +1,7 @@
 import IPhoneGroup from "./IPhoneGroup";
 import MacbookMockup from "./MacbookMockup";
 import techArr from "../../technologies.json";
+import { ReactNode } from "react";
 
 export default function ProjectCard({
   cardType,
@@ -20,7 +21,7 @@ export default function ProjectCard({
   image3?: string;
   project: string;
   jobTitle: string;
-  summary: string;
+  summary: ReactNode;
   technologies: string[];
   repoLink: string;
   siteLink: string;
