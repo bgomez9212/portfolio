@@ -1,7 +1,9 @@
 import IPhoneGroup from "./IPhoneGroup";
 import MacbookMockup from "./MacbookMockup";
-import techArr from "../../technologies.json";
+import techObj from "../../technologies.json";
 import { ReactNode } from "react";
+
+type TechKey = keyof typeof techObj;
 
 export default function ProjectCard({
   cardType,
@@ -40,17 +42,16 @@ export default function ProjectCard({
         </div>
         <p className="pb-3 sm:pb-0">{summary}</p>
         <div id="tech" className="flex items-center w-fit bg-white rounded-md">
-          {techArr.map((tech) => {
-            if (technologies.indexOf(tech.name) > -1) {
-              return (
-                <a href={tech.link} target="_blank" key={tech.name}>
-                  <img
-                    className="h-5 m-1 cursor-pointer transform transition duration-300 ease-in-out hover:scale-150"
-                    src={tech.image}
-                  />
-                </a>
-              );
-            }
+          {technologies.map((usedTech) => {
+            const tech = techObj[usedTech as TechKey];
+            return (
+              <a href={tech.link} target="_blank" key={usedTech}>
+                <img
+                  className="h-5 m-1 cursor-pointer transform transition duration-300 ease-in-out hover:scale-150"
+                  src={tech.image}
+                />
+              </a>
+            );
           })}
           <a href={repoLink} target="_blank">
             <img

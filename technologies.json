@@ -1,67 +1,58 @@
-[
-  {
-    "name": "css",
+{
+  "css": {
     "image": "/technologies/css.png",
     "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
   },
-  {
-    "name": "expo",
+  "expo": {
     "image": "/technologies/expo.png",
     "link": "https://docs.expo.dev/"
   },
-  {
-    "name": "html",
+  "html": {
     "image": "/technologies/html.png",
     "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
   },
-  {
-    "name": "javascript",
+  "javascript": {
     "image": "/technologies/javascript.png",
     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
-  {
-    "name": "nativewind",
+  "nativewind": {
     "image": "/technologies/nativewind.png",
     "link": "https://www.nativewind.dev/"
   },
-  {
-    "name": "node",
+  "node": {
     "image": "/technologies/node.png",
     "link": "https://nodejs.org/en"
   },
-  {
-    "name": "postgres",
+  "postgres": {
     "image": "/technologies/postgres.png",
     "link": "https://www.postgresql.org/docs/"
   },
-  {
-    "name": "react",
+  "python": {
+    "image": "/technologies/python.png",
+    "link": "https://docs.python.org/3/"
+  },
+  "react": {
     "image": "/technologies/react.png",
     "link": "https://react.dev/"
   },
-  {
-    "name": "react-native",
+  "react-native": {
     "image": "/technologies/react.png",
     "link": "https://reactnative.dev/docs/getting-started"
   },
-  {
-    "name": "selectolax",
+  "selectolax": {
     "image": "/technologies/selectolax.png",
     "link": "https://selectolax.readthedocs.io/en/latest/index.html"
   },
-  {
-    "name": "tailwind",
+  "tailwind": {
     "image": "/technologies/tailwind.png",
     "link": "https://v2.tailwindcss.com/docs"
   },
-  {
-    "name": "typescript",
+  "typescript": {
     "image": "/technologies/typescript.png",
     "link": "https://www.typescriptlang.org/docs/"
   },
-  {
-    "name": "vite",
+  "vite": {
     "image": "/technologies/vite.png",
     "link": "https://vite.dev/"
   }
-]
+}
