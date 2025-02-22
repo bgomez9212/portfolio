@@ -2,16 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .scroll-view {
+.border-macbook {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ffffff, #68a2b9),
+    linear-gradient(to left, rgb(0, 0, 0, 0), #e9072b);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.border-phone {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ffffff, #99d9d9),
+    linear-gradient(to left, rgb(0, 0, 0, 0), #e9072b);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.border-api {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ffffff, #355464),
+    linear-gradient(to left, rgb(0, 0, 0, 0), #e9072b);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.scroll-view {
   animation: fade-in linear;
   animation-timeline: view();
   animation-range-start: cover;
   animation-range-end: 500px;
+  animation-range-start: -20px;
+}
+
+#api:hover {
+  filter: drop-shadow(5px 5px 15px #ffffff);
+  cursor: pointer;
 }
 
 @keyframes fade-in {
   from {
-    scale: 0.6;
+    scale: 0.5;
     opacity: 0;
   }
   to {
@@ -19,43 +52,9 @@
     opacity: 1;
   }
 }
-
-@-webkit-keyframes fade-in {
-  from {
-    scale: 0.6;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fade-in {
-  from {
-    scale: 0.6;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fade-in {
-  from {
-    scale: 0.6;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-} */
 
 @layer base {
   :root {
-
     --background: 0 0% 100%;
 
     --foreground: 240 10% 3.9%;
@@ -104,10 +103,9 @@
 
     --chart-5: 27 87% 67%;
 
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
-
     --background: 240 10% 3.9%;
 
     --foreground: 0 0% 98%;
@@ -154,7 +152,7 @@
 
     --chart-4: 280 65% 60%;
 
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 
@@ -164,5 +162,34 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .border-macbook {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(to right, #68a2b9, #001628),
+      linear-gradient(to right, rgb(0, 0, 0, 0), #e9072b);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+
+  .border-phone {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(to right, #99d9d9, #001628),
+      linear-gradient(to right, rgb(0, 0, 0, 0), #e9072b);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+
+  .border-api {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(to right, #355464, #001628),
+      linear-gradient(to right, rgb(0, 0, 0, 0), #e9072b);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
   }
 }

@@ -1,0 +1,67 @@
+[
+  {
+    "name": "css",
+    "image": "/technologies/css.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  {
+    "name": "expo",
+    "image": "/technologies/expo.png",
+    "link": "https://docs.expo.dev/"
+  },
+  {
+    "name": "html",
+    "image": "/technologies/html.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  {
+    "name": "javascript",
+    "image": "/technologies/javascript.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "name": "nativewind",
+    "image": "/technologies/nativewind.png",
+    "link": "https://www.nativewind.dev/"
+  },
+  {
+    "name": "node",
+    "image": "/technologies/node.png",
+    "link": "https://nodejs.org/en"
+  },
+  {
+    "name": "postgres",
+    "image": "/technologies/postgres.png",
+    "link": "https://www.postgresql.org/docs/"
+  },
+  {
+    "name": "react",
+    "image": "/technologies/react.png",
+    "link": "https://react.dev/"
+  },
+  {
+    "name": "react-native",
+    "image": "/technologies/react.png",
+    "link": "https://reactnative.dev/docs/getting-started"
+  },
+  {
+    "name": "selectolax",
+    "image": "/technologies/selectolax.png",
+    "link": "https://selectolax.readthedocs.io/en/latest/index.html"
+  },
+  {
+    "name": "tailwind",
+    "image": "/technologies/tailwind.png",
+    "link": "https://v2.tailwindcss.com/docs"
+  },
+  {
+    "name": "typescript",
+    "image": "/technologies/typescript.png",
+    "link": "https://www.typescriptlang.org/docs/"
+  },
+  {
+    "name": "vite",
+    "image": "/technologies/vite.png",
+    "link": "https://vite.dev/"
+  }
+]
