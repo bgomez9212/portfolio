@@ -1,6 +1,29 @@
+import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 
 export default function PersonalProjects() {
+  const [suplexData, setSuplexData] = useState({
+    events: 0,
+    matches: 0,
+    wrestlers: 0,
+  });
+
+  async function getSuplexData() {
+    const url = "https://digitalnotebook-production.up.railway.app/api/info";
+    try {
+      const response = await fetch(url);
+      return response.json();
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  useEffect(() => {
+    getSuplexData().then((res) => setSuplexData(res[0]));
+  }, []);
+
+  console.log(suplexData);
+
   return (
     <div
       className="pt-mobileNav sm:pt-navbar flex flex-col w-4/5"
@@ -31,7 +54,7 @@ export default function PersonalProjects() {
           cardType="API"
           project="Suplex API"
           jobTitle="Backend Software Engineer"
-          summary="API for Suplex Application. Developed a web scraper to intermittently injects data into database."
+          summary={`API for Suplex Application. Developed a web scraper to intermittently inject data into database. Currently contains ${suplexData.events} events, ${suplexData.matches} matches, and ${suplexData.wrestlers} wrestlers`}
           technologies={["python", "postgres", "selectolax"]}
           repoLink="https://github.com/bgomez9212/digitalNotebook"
           siteLink="https://github.com/bgomez9212/digitalNotebook"
