@@ -4,9 +4,9 @@ import Section from "./Section";
 
 export default function PersonalProjects() {
   const [suplexData, setSuplexData] = useState({
-    events: 0,
-    matches: 0,
-    wrestlers: 0,
+    events: undefined,
+    matches: undefined,
+    wrestlers: undefined,
   });
 
   async function getSuplexData() {
