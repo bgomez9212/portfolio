@@ -49,7 +49,7 @@ export default function PersonalProjects() {
         project="Suplex API"
         jobTitle="Backend Software Engineer"
         summary={`API for Suplex Application. Developed a web scraper to intermittently inject data into database. Currently contains ${suplexData.events} events, ${suplexData.matches} matches, and ${suplexData.wrestlers} wrestlers`}
-        technologies={["python", "postgres", "selectolax"]}
+        technologies={["python", "selectolax", "postgres", "node"]}
         repoLink="https://github.com/bgomez9212/digitalNotebook"
         siteLink="https://github.com/bgomez9212/digitalNotebook"
       />
