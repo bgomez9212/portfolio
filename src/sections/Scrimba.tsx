@@ -46,6 +46,16 @@ export default function Scrimba() {
           deploymentLink="https://scrimbacolorscheme-production.up.railway.app/"
           figmaLink="https://www.figma.com/file/twasy8Bca4hW7gunLFSLoY/Color-Scheme-Generator?type=design&node-id=2-1155&mode=design&t=HshCzGuZXQQcAwCT-0"
         /> */}
+        <ProjectCard
+          cardType="Macbook"
+          project="Color Scheme Generator"
+          jobTitle="Frontend Engineer"
+          summary="Using the Color API (https://www.thecolorapi.com/), generate color schemes based on user-selected colors."
+          technologies={["javascript", "html", "css"]}
+          repoLink="https://github.com/bgomez9212/scrimbaColorScheme"
+          siteLink="https://scrimbacolorscheme-production.up.railway.app/"
+          image1="/projects/colorgenerator.png"
+        />
         {/* <ProjectCard
           projectName="Travel Journal"
           description="The first solo project of Scrimba's React section, using React replicate a travel journal using a Figma design. Creating this application was a practice in creating reusable components, passing props and learning methods such as mapping over arrays to render each element of an array individually."

@@ -41,7 +41,7 @@ export default function PersonalProjects() {
           image1="/projects/mealmachine.png"
           project="MealMachine"
           jobTitle="Full Stack Engineer"
-          summary="Application that suggests recipes based on available ingredients"
+          summary="Application that suggests recipes based on available ingredients using the Spoonacular API (https://spoonacular.com/food-api)."
           technologies={[
             "vite",
             "react",
