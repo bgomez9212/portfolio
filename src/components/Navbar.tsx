@@ -24,6 +24,10 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
+  function scrollToSection(elementId: string) {
+    document.getElementById(elementId)?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <div
       className={`flex-col z-10 flex items-center fixed top-0 left-0 right-0 bg-white dark:bg-deepSeaBlue dark:text-white dark:shadow-redAlert ${dynamicHeight.shadow}`}
@@ -56,30 +60,30 @@ export default function Navbar() {
       <div className="border-b-2 border-b-shadowBlue w-4/5 mb-3" />
       <div className="flex justify-center pb-3 w-[90%] max-w-[600px]">
         <div className="flex justify-between flex-wrap sm:flex-nowrap w-full">
-          <a
-            href="#personal-projects"
+          <p
             className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto"
+            onClick={() => scrollToSection("personal-projects")}
           >
             Personal Projects
-          </a>
-          <a
-            href="#hack-reactor"
+          </p>
+          <p
             className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto text-right"
+            onClick={() => scrollToSection("hack-reactor")}
           >
             HackReactor
-          </a>
-          <a
-            href="#scrimba"
+          </p>
+          <p
             className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto"
+            onClick={() => scrollToSection("scrimba")}
           >
             Scrimba
-          </a>
-          <a
-            href="#contact"
+          </p>
+          <p
             className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto text-right"
+            onClick={() => scrollToSection("contact")}
           >
             Contact
-          </a>
+          </p>
         </div>
       </div>
     </div>
