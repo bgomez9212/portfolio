@@ -10,7 +10,7 @@ export default function AboutMe() {
   }, [position]);
 
   return (
-    <div className="w-3/4 sm:w-3/4 flex flex-col text-center text-md h-1/2 sm:h-screen z-0 justify-between items-center pt-[350px] sm:pt-[400px]">
+    <div className="w-3/4 sm:w-3/4 flex flex-col text-center text-md h-screen z-0 sm:justify-between items-center pt-[350px] sm:pt-[400px]">
       <div>
         Welcome! I am a fullstack web and mobile application developer based in
         Reno, NV, that specializes in the PERN stack. <br />I have brought some
@@ -18,7 +18,7 @@ export default function AboutMe() {
       </div>
       {position === 0 && (
         <div>
-          <img className="moveArrow opacity-50 bor" src="/down.png" />
+          <img className="moveArrow opacity-50" src="/down.png" />
         </div>
       )}
     </div>
