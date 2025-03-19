@@ -1,7 +1,8 @@
 import IPhoneGroup from "./IPhoneGroup";
 import MacbookMockup from "./MacbookMockup";
 import techObj from "../../technologies.json";
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 type TechKey = keyof typeof techObj;
 
@@ -31,9 +32,21 @@ export default function ProjectCard({
   image1 = image1 || "/placeholder.png";
   image2 = image2 || "/placeholder.png";
   image3 = image3 || "/placeholder.png";
+
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 0.5], [0.5, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+
   return (
-    <div
-      className={`rounded-lg w-full flex my-10 justify-between px-10 md:h-[275px] relative scroll-view ${cardType === "IPhone" ? "border-phone dark:border-phone" : cardType === "Macbook" ? "border-macbook dark:border-macbook" : "border-api dark:border-api"}`}
+    <motion.div
+      ref={ref}
+      style={{ scale, opacity }}
+      className={`rounded-lg w-full flex my-10 justify-between px-10 md:h-[275px] relative ${cardType === "IPhone" ? "border-phone dark:border-phone" : cardType === "Macbook" ? "border-macbook dark:border-macbook" : "border-api dark:border-api"}`}
     >
       <div id="text" className="flex flex-col py-10 justify-between md:w-1/2">
         <div>
@@ -82,6 +95,6 @@ export default function ProjectCard({
           </a>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }

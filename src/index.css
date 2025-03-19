@@ -34,24 +34,6 @@
   cursor: pointer;
 }
 
-.scroll-view {
-  animation: fade-in linear;
-  animation-timeline: view();
-  animation-range-end: 500px;
-  animation-range-start: -20px;
-}
-
-@keyframes fade-in {
-  from {
-    scale: 0.5;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
