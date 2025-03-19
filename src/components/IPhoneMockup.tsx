@@ -4,7 +4,7 @@ import frame from "/demos/frame.png";
 export default function IPhoneMockup({ image }: { image: string }) {
   return (
     <div className="relative max-w-[145px]">
-      <img src={frame} className="h-full max-h-full max-w-full" />
+      <img src={frame} />
       <div className="absolute top-[1.3%] left-[3.5%] right-[3.1%]">
         <img
           style={{
