@@ -36,7 +36,7 @@ export default function ProjectCard({
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end start"],
+    offset: ["start end", "25vh"],
   });
 
   const scale = useTransform(scrollYProgress, [0, 0.5], [0.5, 1]);
