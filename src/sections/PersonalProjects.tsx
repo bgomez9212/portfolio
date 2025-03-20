@@ -2,8 +2,14 @@ import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import Section from "./Section";
 
+interface SuplexData {
+  events: number | undefined;
+  matches: number | undefined;
+  wrestlers: number | undefined;
+}
+
 export default function PersonalProjects() {
-  const [suplexData, setSuplexData] = useState({
+  const [suplexData, setSuplexData] = useState<SuplexData>({
     events: undefined,
     matches: undefined,
     wrestlers: undefined,
@@ -48,7 +54,7 @@ export default function PersonalProjects() {
         cardType="API"
         project="Suplex API"
         jobTitle="Backend Software Engineer"
-        summary={`API for Suplex Application. Developed a web scraper to intermittently inject data into database. Currently contains ${suplexData.events} events, ${suplexData.matches} matches, and ${suplexData.wrestlers} wrestlers`}
+        summary={`API for Suplex Application. Developed a web scraper to intermittently inject data into database. Currently contains ${suplexData.events?.toLocaleString()} events, ${suplexData.matches?.toLocaleString()} matches, and ${suplexData.wrestlers?.toLocaleString()} wrestlers`}
         technologies={["python", "selectolax", "postgres", "node"]}
         repoLink="https://github.com/bgomez9212/digitalNotebook"
         siteLink="https://github.com/bgomez9212/digitalNotebook"
