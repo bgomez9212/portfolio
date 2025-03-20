@@ -22,7 +22,10 @@ export default function AboutMe() {
       </div>
       {position === 0 && (
         <div onClick={() => scrollToSection("personal-projects")}>
-          <img className="moveArrow opacity-50" src="/down.png" />
+          <img
+            className="moveArrow opacity-50 cursor-pointer"
+            src="/down.png"
+          />
         </div>
       )}
     </div>

@@ -61,25 +61,25 @@ export default function Navbar() {
       <div className="flex justify-center pb-3 w-[90%] max-w-[600px]">
         <div className="flex justify-between flex-wrap sm:flex-nowrap w-full">
           <p
-            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto"
+            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto cursor-pointer"
             onClick={() => scrollToSection("personal-projects")}
           >
             Personal Projects
           </p>
           <p
-            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto text-right"
+            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto text-right cursor-pointer"
             onClick={() => scrollToSection("hack-reactor")}
           >
             HackReactor
           </p>
           <p
-            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto"
+            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto cursor-pointer"
             onClick={() => scrollToSection("scrimba")}
           >
             Scrimba
           </p>
           <p
-            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto text-right"
+            className="hover:underline decoration-redAlert underline-offset-8 w-1/2 sm:w-auto text-right cursor-pointer"
             onClick={() => scrollToSection("contact")}
           >
             Contact
