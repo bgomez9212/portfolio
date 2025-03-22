@@ -1,8 +1,13 @@
 const { createServer } = require("node:http");
 const { axios } = require("axios");
 const dotenv = require("dotenv").config();
+const express = require("express");
+var cors = require("cors");
+const app = express();
 
 const port = 3000;
+
+app.use(cors());
 
 async function main() {
   const response = await fetch(
@@ -17,13 +22,12 @@ async function main() {
   return data;
 }
 
-const server = createServer((req, res) => {
+app.get("/", (req, res) => {
   main().then((data) => {
-    res.writeHead(200, { "Content-Type": "application/json" });
-    res.end(JSON.stringify(data));
+    res.send(JSON.stringify(data)).status(200);
   });
 });
 
-server.listen(port, () => {
-  console.log(`Server running on port ${process.env.PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log("listening");
 });
