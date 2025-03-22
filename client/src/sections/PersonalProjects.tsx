@@ -16,15 +16,17 @@ export default function PersonalProjects() {
   });
 
   async function getSuplexData() {
-    const url = "https://digitalnotebook-production.up.railway.app/api/info";
+    const url = "http://portfolio-server-production-df8d.up.railway.app/";
     try {
       const response = await fetch(url);
+      console.log(response);
       return response.json();
     } catch (err) {
       console.error(err);
     }
   }
 
+  // getSuplexData();
   useEffect(() => {
     getSuplexData().then((res) => setSuplexData(res[0]));
   }, []);

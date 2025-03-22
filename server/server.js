@@ -11,12 +11,7 @@ app.use(cors());
 
 async function main() {
   const response = await fetch(
-    "https://digitalnotebook-production.up.railway.app/api/info",
-    {
-      params: {
-        example: "example",
-      },
-    }
+    "https://digitalnotebook-production.up.railway.app/api/info"
   );
   const data = await response.json();
   return data;
