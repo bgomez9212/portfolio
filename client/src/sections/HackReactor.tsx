@@ -9,7 +9,7 @@ export default function HackReactor() {
         image1="/projects/neonCollab.png"
         project="neonCollab"
         jobTitle="Fullstack Software Engineer"
-        summary="Developed chat feature for leetcode-type application with social media features. I was responsible for the chat feature."
+        summary="Developed chat feature for leetcode-type application with social media features."
         technologies={["react", "css", "node", "postgres"]}
         repoLink="https://github.com/Neon-Collab/Neon-Collab?tab=readme-ov-file#feedback-page"
         siteLink="https://github.com/Neon-Collab/Neon-Collab?tab=readme-ov-file#feedback-page"
