@@ -5,13 +5,14 @@ const express = require("express");
 var cors = require("cors");
 const app = express();
 
-const port = 3000;
-
 app.use(cors());
 
 async function main() {
   const response = await fetch(
-    "https://digitalnotebook-production.up.railway.app/api/info"
+    process.env.API_URL +
+      new URLSearchParams({
+        apiKey: process.env.API_KEY,
+      }).toString()
   );
   const data = await response.json();
   return data;
