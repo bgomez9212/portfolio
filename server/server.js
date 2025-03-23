@@ -1,29 +1,39 @@
-const { createServer } = require("node:http");
-const { axios } = require("axios");
-const dotenv = require("dotenv").config();
 const express = require("express");
-var cors = require("cors");
+const cors = require("cors");
+require("dotenv").config(); // Note: simplified this line
 const app = express();
 
 app.use(cors());
 
 async function main() {
-  const response = await fetch(
-    process.env.API_URL +
-      new URLSearchParams({
-        apiKey: process.env.API_KEY,
-      }).toString()
-  );
-  const data = await response.json();
-  return data;
+  try {
+    const url = new URL(process.env.API_URL);
+    url.searchParams.append("apiKey", process.env.API_KEY);
+
+    const response = await fetch(url.toString());
+
+    if (!response.ok) {
+      throw new Error(`API responded with status: ${response.status}`);
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error; // Re-throw to handle in route handler
+  }
 }
 
 app.get("/", (req, res) => {
-  main().then((data) => {
-    res.send(JSON.stringify(data)).status(200);
-  });
+  main()
+    .then((data) => {
+      res.status(200).json(data); // Proper way to send JSON with status
+    })
+    .catch((error) => {
+      res.status(500).json({ error: "Failed to fetch data" });
+    });
 });
 
-app.listen(process.env.PORT, () => {
-  console.log("listening");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
