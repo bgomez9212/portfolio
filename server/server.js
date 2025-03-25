@@ -24,9 +24,9 @@ async function main() {
 app.get("/", (req, res) => {
   main()
     .then((data) => {
-      res.status(200).send(JSON.stringify(data));
+      res.status(200).json(data);
     })
-    .catch((error) => res.status(500).send("error fetching data"));
+    .catch((error) => res.status(500).json({ error: "error fetching data" }));
 });
 
 app.listen(process.env.PORT, "0.0.0.0", () => {
