@@ -57,7 +57,7 @@ export default function PersonalProjects() {
         summary={`API for Suplex Application. Developed a web scraper to intermittently inject data into database. Currently contains ${suplexData.events?.toLocaleString()} events, ${suplexData.matches?.toLocaleString()} matches, and ${suplexData.wrestlers?.toLocaleString()} wrestlers`}
         technologies={["python", "selectolax", "postgres", "node"]}
         repoLink="https://github.com/bgomez9212/digitalNotebook"
-        siteLink="https://github.com/bgomez9212/digitalNotebook"
+        siteLink="https://suplex-docs-production.up.railway.app/"
       />
       <ProjectCard
         cardType="Macbook"
